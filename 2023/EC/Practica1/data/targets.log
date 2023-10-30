@@ -1,0 +1,1181 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.4
+# Built for x86_64-redhat-linux-gnu
+# Copyright (C) 1988-2022 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Mon Sep 11 13:03:26 2023
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+NO_AT_BRIDGE = 1
+# makefile (from 'makefile', line 12)
+SRC = $(wildcard *.c *.cc)
+# makefile (from 'makefile', line 16)
+START = $(basename $(shell find *.s -exec grep -l '_start:' {} \;))
+# environment
+define BASH_FUNC_scl%%
+() {  if [ "$1" = "load" -o "$1" = "unload" ]; then
+ eval "module $@";
+ else
+ /usr/bin/scl "$@";
+ fi
+}
+endef
+# makefile (from 'makefile', line 23)
+DIS = $(shell grep '^ID=.*$$' /etc/os-release | cut -d'=' -f2)
+# environment
+VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
+# environment
+VSCODE_CWD = /home/gustavo/docencia/2023-2024/ec/practicas/1
+# environment
+MODULES_CMD = /usr/share/Modules/libexec/modulecmd.tcl
+# environment
+GDM_LANG = es_ES.UTF-8
+# default
+MAKE_COMMAND := make
+# makefile (from 'makefile', line 5)
+A32 = $(wildcard *32*.s)
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/gustavo/escritorio/ec/practicas/1
+# automatic
+ 
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+HOSTNAME = pccito.ugr.es
+# environment
+MAIL = /var/spool/mail/gustavo
+# environment
+XDG_DATA_DIRS = /home/gustavo/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/
+# environment
+OLDPWD = /home/gustavo
+# environment
+MODULES_RUN_QUARANTINE = LD_LIBRARY_PATH LD_PRELOAD
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/gustavo/.config/Code/CachedData/8b617bd08fd9e3fc94d14adb8d358b56e3f72314
+# environment
+LANG = C
+# environment
+GUESTFISH_OUTPUT = \e[0m
+# environment
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.9P0NA2
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS := /usr/local/include /usr/include
+# environment
+GUESTFISH_INIT = \e[1;34m
+# environment
+GNOME_TERMINAL_SERVICE = :1.109
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /home/gustavo/docencia/2023-2024/ec/practicas/1
+# environment
+define BASH_FUNC_module%%
+() {  local _mlredir=1;
+ if [ -n "${MODULES_REDIRECT_OUTPUT+x}" ]; then
+ if [ "$MODULES_REDIRECT_OUTPUT" = '0' ]; then
+ _mlredir=0;
+ else
+ if [ "$MODULES_REDIRECT_OUTPUT" = '1' ]; then
+ _mlredir=1;
+ fi;
+ fi;
+ fi;
+ case " $@ " in 
+ *' --no-redirect '*)
+ _mlredir=0
+ ;;
+ *' --redirect '*)
+ _mlredir=1
+ ;;
+ esac;
+ if [ $_mlredir -eq 0 ]; then
+ _module_raw "$@";
+ else
+ _module_raw "$@" 2>&1;
+ fi
+}
+endef
+# makefile (from 'makefile', line 11)
+ASM = $(wildcard *.s)
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+LESSOPEN = ||/usr/bin/lesspipe.sh %s
+# environment
+VSCODE_L10N_BUNDLE_LOCATION = file:///home/gustavo/.vscode/extensions/ms-ceintl.vscode-language-pack-es-1.82.2023090609/translations/extensions/vscode.json-language-features.i18n.json
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# environment
+WAYLAND_DISPLAY = wayland-0
+# environment
+HISTSIZE = 1000
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_SESSION_DESKTOP = gnome-wayland
+# makefile (from 'makefile', line 1)
+MAKEFILE_LIST := makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_PID = 23678
+# environment
+XDG_SESSION_TYPE = wayland
+# makefile (from 'makefile', line 9)
+E64 = $(basename $(A64))
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+SESSION_MANAGER = local/unix:@/tmp/.ICE-unix/9724,unix/unix:/tmp/.ICE-unix/9724
+# automatic
+*F = $(notdir $*)
+# environment
+MANPATH = /usr/share/man:
+# environment
+MODULEPATH = /etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+__MODULES_LMINIT = module use --append /usr/share/Modules/modulefiles:module use --append /etc/modulefiles:module use --append /usr/share/modulefiles
+# environment
+VSCODE_NLS_CONFIG = {"locale":"es","osLocale":"es-es","availableLanguages":{"*":"es"},"_languagePackId":"4db3809a663b24d58c00883a9d02ff6f.es","_translationsConfigFile":"/home/gustavo/.config/Code/clp/4db3809a663b24d58c00883a9d02ff6f.es/tcf.json","_cacheRoot":"/home/gustavo/.config/Code/clp/4db3809a663b24d58c00883a9d02ff6f.es","_resolvedLanguagePackCoreLocation":"/home/gustavo/.config/Code/clp/4db3809a663b24d58c00883a9d02ff6f.es/8b617bd08fd9e3fc94d14adb8d358b56e3f72314","_corruptedFile":"/home/gustavo/.config/Code/clp/4db3809a663b24d58c00883a9d02ff6f.es/corrupted.info","_languagePackSupport":true}
+# environment
+define BASH_FUNC_ml%%
+() {  module ml "$@"
+}
+endef
+# default
+MAKE_HOST := x86_64-redhat-linux-gnu
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+XMODIFIERS = @im=ibus
+# environment
+SHLVL = 1
+# environment
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/da8f5a88_0cf5_4e6c_8e8d_66dbdcca8a05
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /home/gustavo/.local/bin:/home/gustavo/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin
+# environment
+MOZ_GMP_PATH = /usr/lib64/mozilla/plugins/gmp-gmpopenh264/system-installed
+# default
+MAKEFILES := 
+# environment
+MODULESHOME = /usr/share/Modules
+# automatic
+^F = $(notdir $^)
+# makefile (from 'makefile', line 6)
+E32 = $(basename $(A32))
+# environment
+USERNAME = gustavo
+# environment
+GNOME_SETUP_DISPLAY = :1
+# automatic
+?F = $(notdir $?)
+# environment
+GUESTFISH_PS1 = \[\e[1;32m\]><fs>\[\e[0;31m\] 
+# environment
+XDG_CURRENT_DESKTOP = GNOME
+# environment
+KDEDIRS = /usr
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:*~=00;90:*#=00;90:*.bak=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.swp=00;90:*.tmp=00;90:*.dpkg-dist=00;90:*.dpkg-old=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:
+# automatic
++F = $(notdir $+)
+# environment
+DESKTOP_SESSION = gnome-wayland
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = GNOME
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = gustavo
+# makefile (from 'makefile', line 13)
+EXE = $(basename $(ASM) $(SRC))
+# makefile
+.DEFAULT_GOAL := all
+# environment
+SYSTEMD_EXEC_PID = 9778
+# makefile (from 'makefile', line 8)
+A64 = $(wildcard *64*.s)
+# environment
+HISTCONTROL = ignoredups
+# environment
+EDITOR = /usr/bin/nano
+# environment
+DISPLAY = :0
+# environment
+USER = gustavo
+# default
+MAKE_VERSION := 4.4
+# 'override' directive
+.SHELLSTATUS := 0
+# environment
+DEBUGINFOD_URLS = https://debuginfod.fedoraproject.org/ 
+# environment
+_ = /usr/bin/make
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# makefile (from 'makefile', line 20)
+CFLAGS = -g -Og -Wall
+# environment
+COLORTERM = truecolor
+# makefile (from 'makefile', line 14)
+ATT = $(EXE:=.att)
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/gustavo
+# environment
+QT_IM_MODULE = ibus
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-8f6c2e77-1.82-main.sock
+# environment
+TERM = xterm-256color
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# environment
+define BASH_FUNC__module_raw%%
+() {  eval "$(/usr/bin/tclsh '/usr/share/Modules/libexec/modulecmd.tcl' bash "$@")";
+ _mlstatus=$?;
+ return $_mlstatus
+}
+endef
+# default
+SUFFIXES := 
+# environment
+GUESTFISH_RESTORE = \e[0m
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+VTE_VERSION = 7202
+# makefile (from 'makefile', line 21)
+CXXFLAGS = $(CFLAGS)
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs notintermediate shell-export archives jobserver jobserver-fifo output-sync check-symlink guile load
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+__MODULES_SHARE_MANPATH = :1
+# environment
+GDMSESSION = gnome-wayland
+# variable set hash-table stats:
+# Load=126/1024=12%, Rehash=0, Collisions=24/214=11%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 64770, inode 24117806): 96 files, 57 impossibilities.
+
+# 96 files, 57 impossibilities in 1 directories.
+
+# Implicit Rules
+ 
+
+%: %.s
+#  recipe to execute (from 'makefile', line 77):
+	$(CC) $(CFLAGS) $< -o $@
+
+%: %.c
+#  recipe to execute (from 'makefile', line 83):
+	$(CC) $(CFLAGS) $< -o $@
+
+%: %.cc
+#  recipe to execute (from 'makefile', line 86):
+	$(CXX) $(CXXFLAGS) $< -o $@
+
+%.att: %
+#  recipe to execute (from 'makefile', line 89):
+	objdump -Cd $< > $@
+
+# 4 implicit rules, 0 (0.0%) terminal.
+# Files
+
+# makefile (from 'makefile', line 61)
+printf32e: CFLAGS += -m32
+printf32e: printf32e.s
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'printf32e'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.698608481
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'makefile', line 77):
+	$(CC) $(CFLAGS) $< -o $@
+
+hola64-c.att: hola64-c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'hola64-c'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.566609084
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 89):
+	objdump -Cd $< > $@
+
+# Not a target:
+printf32e.s:
+#  Implicit rule search has been done.
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-04 12:10:07.922265651
+#  File has been updated.
+#  Successfully updated.
+
+# makefile (from 'makefile', line 64)
+addable: CXXFLAGS += -std=c++20
+addable: addable.cc
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'addable'
+#  Last modified 2023-09-11 12:58:18.425605156
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := addable
+# automatic
+# * := addable
+# automatic
+# < := addable.cc
+# automatic
+# + := addable.cc
+# automatic
+# % := 
+# automatic
+# ^ := addable.cc
+# automatic
+# ? := addable.cc
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=9/32=28%, Rehash=0, Collisions=1/20=5%
+#  recipe to execute (from 'makefile', line 86):
+	$(CXX) $(CXXFLAGS) $< -o $@
+
+# Not a target:
+sum0.att:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+hola32.s:
+#  Implicit rule search has been done.
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-04 12:10:07.922265651
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+sum3.att:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+minimo32-s.att: minimo32-s
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'minimo32-s'
+ 
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.681608558
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 89):
+	objdump -Cd $< > $@
+
+minimo1: minimo1.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'minimo1'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.855607763
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 83):
+	$(CC) $(CFLAGS) $< -o $@
+
+# Not a target:
+sums.att:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+variadic.att:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+hola-c.att: hola-c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'hola-c'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.829607882
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 89):
+	objdump -Cd $< > $@
+
+hola-c: hola-c.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'hola-c'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.821607918
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 83):
+	$(CC) $(CFLAGS) $< -o $@
+
+# Not a target:
+sumg.att:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+hola64p.s:
+#  Implicit rule search has been done.
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-04 12:10:07.922265651
+#  File has been updated.
+#  Successfully updated.
+
+minimo3.att: minimo3
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'minimo3'
+#  File is secondary (prerequisite of .SECONDARY).
+ 
+#  Last modified 2023-09-11 12:58:17.936607392
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 89):
+	objdump -Cd $< > $@
+
+# Not a target:
+fib:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# makefile (from 'makefile', line 67)
+sum2: CXXFLAGS += -O2
+# Not a target:
+sum2:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+minimo3: minimo3.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'minimo3'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.929607424
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 83):
+	$(CC) $(CFLAGS) $< -o $@
+
+# Not a target:
+printf-c-2.c:
+#  Implicit rule search has been done.
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-04 12:10:07.922265651
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+hola-c++.att:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+printf-c-1.att: printf-c-1
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'printf-c-1'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.973607223
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 89):
+	objdump -Cd $< > $@
+
+# Not a target:
+bug.att:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# makefile (from 'makefile', line 61)
+minimo32-s: CFLAGS += -m32
+minimo32-s: minimo32-s.s
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'minimo32-s'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.67460859
+#  File has been updated.
+#  Successfully updated.
+ 
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'makefile', line 80):
+	$(CC) $(CFLAGS) -nostartfiles $< -o $@
+
+# makefile (from 'makefile', line 72)
+zmm: CXXFLAGS += -march=knl -O3
+# Not a target:
+zmm:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+# Not a target:
+sum:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+zmm.att:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# makefile (from 'makefile', line 61)
+printf32: CFLAGS += -m32
+printf32: printf32.s
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'printf32'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.721608375
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'makefile', line 77):
+	$(CC) $(CFLAGS) $< -o $@
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 37):
+	-rm -fv $(ATT) $(EXE) *~
+
+# Not a target:
+hola64.s:
+#  Implicit rule search has been done.
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-04 12:10:07.922265651
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+hola.s:
+#  Implicit rule search has been done.
+#  File is secondary (prerequisite of .SECONDARY).
+ 
+#  Last modified 2023-09-04 12:10:07.922265651
+#  File has been updated.
+#  Successfully updated.
+
+segfault: addable bug fib hola hola-c hola-c++ hola32 hola32p hola64 hola64-c hola64p libc minimo1 minimo2 minimo3 minimo32-s printf-c-1 printf-c-2 printf32 printf32e printf64 sum sum0 sum1 sum2 sum3 sumg sums variadic zmm
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 52):
+	@-for i in $^; do \
+		./$$i &> /dev/null; \
+		if [[ "$$?" == "136" ]]; then \
+			echo "$$i segfalts!"; \
+		fi; \
+	done
+
+ret: addable bug fib hola hola-c hola-c++ hola32 hola32p hola64 hola64-c hola64p libc minimo1 minimo2 minimo3 minimo32-s printf-c-1 printf-c-2 printf32 printf32e printf64 sum sum0 sum1 sum2 sum3 sumg sums variadic zmm
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 45):
+	@for i in $^; do \
+		./$$i &> /dev/null; \
+		printf "%10s %8i\n" $$i $$?; \
+	done
+
+minimo2: minimo2.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'minimo2'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.888607612
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 83):
+	$(CC) $(CFLAGS) $< -o $@
+
+# makefile (from 'makefile', line 68)
+sum3: CXXFLAGS += -O3
+# Not a target:
+sum3:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+# Not a target:
+sum1.att:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+libc.s:
+#  Implicit rule search has been done.
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-04 12:10:07.922265651
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ 
+minimo2.c:
+#  Implicit rule search has been done.
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-04 12:10:07.922265651
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+bug:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# makefile (from 'makefile', line 62)
+hola64-c: CFLAGS += -m64
+hola64-c: hola64-c.s
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'hola64-c'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.560609112
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'makefile', line 77):
+	$(CC) $(CFLAGS) $< -o $@
+
+exe: hola hola32 hola32p hola64-c hola64 hola64p libc minimo32-s printf32 printf32e printf64 hola-c minimo1 minimo2 minimo3 printf-c-1 printf-c-2 addable bug fib hola-c++ sum sum0 sum1 sum2 sum3 sumg sums variadic zmm
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+hola.att: hola
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'hola'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.63760876
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 89):
+	objdump -Cd $< > $@
+
+# Not a target:
+minimo32-s.s:
+#  Implicit rule search has been done.
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-04 12:10:07.922265651
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+hola64-c.s:
+#  Implicit rule search has been done.
+#  File is secondary (prerequisite of .SECONDARY).
+ 
+#  Last modified 2023-09-04 12:10:07.922265651
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+addable.cc:
+#  Implicit rule search has been done.
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 13:03:23.700009351
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+hola-c++:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+printf32e.att: printf32e
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'printf32e'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.704608453
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 89):
+	objdump -Cd $< > $@
+
+hola32p.att: hola32p
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'hola32p'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.520609295
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 89):
+	objdump -Cd $< > $@
+
+hola64.att: hola64
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'hola64'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.616608855
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 89):
+	objdump -Cd $< > $@
+
+addable.att: addable
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'addable'
+#  Last modified 2023-09-11 12:58:18.434605115
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
+#  recipe to execute (from 'makefile', line 89):
+	objdump -Cd $< > $@
+ 
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+hola: hola.s
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'hola'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.631608787
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 80):
+	$(CC) $(CFLAGS) -nostartfiles $< -o $@
+
+all: att
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
+
+hola32.att: hola32
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'hola32'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.542609194
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 89):
+	objdump -Cd $< > $@
+
+printf-c-2: printf-c-2.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'printf-c-2'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:18.004607081
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 83):
+	$(CC) $(CFLAGS) $< -o $@
+
+# makefile (from 'makefile', line 71)
+variadic: CXXFLAGS += -O3
+# Not a target:
+variadic:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+ 
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+# makefile (from 'makefile', line 62)
+hola64: CFLAGS += -m64
+hola64: hola64.s
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'hola64'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.609608887
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'makefile', line 80):
+	$(CC) $(CFLAGS) -nostartfiles $< -o $@
+
+# Not a target:
+printf32.s:
+#  Implicit rule search has been done.
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-04 12:10:07.922265651
+#  File has been updated.
+#  Successfully updated.
+
+# makefile (from 'makefile', line 61)
+hola32p: CFLAGS += -m32
+hola32p: hola32p.s
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'hola32p'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.511609336
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'makefile', line 80):
+	$(CC) $(CFLAGS) -nostartfiles $< -o $@
+
+printf64.att: printf64
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'printf64'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.751608238
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 89):
+	objdump -Cd $< > $@
+
+printf-c-2.att: printf-c-2
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'printf-c-2'
+#  File is secondary (prerequisite of .SECONDARY).
+ 
+#  Last modified 2023-09-11 12:58:18.011607049
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 89):
+	objdump -Cd $< > $@
+
+libc.att: libc
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'libc'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.660608654
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 89):
+	objdump -Cd $< > $@
+
+# makefile (from 'makefile', line 66)
+sum1: CXXFLAGS += -O1
+# Not a target:
+sum1:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+libc: libc.s
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'libc'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.653608686
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 77):
+	$(CC) $(CFLAGS) $< -o $@
+
+minimo1.att: minimo1
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'minimo1'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.862607731
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 89):
+	objdump -Cd $< > $@
+
+# Not a target:
+sum2.att:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+minimo2.att: minimo2
+ 
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'minimo2'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.89560758
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 89):
+	objdump -Cd $< > $@
+
+# Not a target:
+fib.att:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+minimo1.c:
+#  Implicit rule search has been done.
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-04 12:10:07.922265651
+#  File has been updated.
+#  Successfully updated.
+
+# makefile (from 'makefile', line 69)
+sums: CXXFLAGS += -Os
+# Not a target:
+sums:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+# makefile (from 'makefile', line 62)
+printf64: CFLAGS += -m64
+printf64: printf64.s
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'printf64'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.74460827
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'makefile', line 77):
+	$(CC) $(CFLAGS) $< -o $@
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-04 12:10:07.921265654
+#  File has been updated.
+#  Successfully updated.
+
+printf-c-1: printf-c-1.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'printf-c-1'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.966607255
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 83):
+	$(CC) $(CFLAGS) $< -o $@
+
+# Not a target:
+hola-c.c:
+#  Implicit rule search has been done.
+ 
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-04 12:10:07.922265651
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+printf64.s:
+#  Implicit rule search has been done.
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-04 12:10:07.922265651
+#  File has been updated.
+#  Successfully updated.
+
+hola64p.att: hola64p
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'hola64p'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.594608956
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 89):
+	objdump -Cd $< > $@
+
+# makefile (from 'makefile', line 70)
+sumg: CXXFLAGS += -Og
+# Not a target:
+sumg:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+# makefile (from 'makefile', line 61)
+hola32: CFLAGS += -m32
+hola32: hola32.s
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'hola32'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.535609226
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'makefile', line 80):
+	$(CC) $(CFLAGS) -nostartfiles $< -o $@
+
+# Not a target:
+sum.att:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ 
+# Not a target:
+hola32p.s:
+#  Implicit rule search has been done.
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-04 12:10:07.922265651
+#  File has been updated.
+#  Successfully updated.
+
+# makefile (from 'makefile', line 62)
+hola64p: CFLAGS += -m64
+hola64p: hola64p.s
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'hola64p'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.584609002
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'makefile', line 80):
+	$(CC) $(CFLAGS) -nostartfiles $< -o $@
+
+.PHONY: all att clean exe ret
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# makefile (from 'makefile', line 65)
+sum0: CXXFLAGS += -O0
+# Not a target:
+sum0:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/3=0%
+
+# Not a target:
+minimo3.c:
+#  Implicit rule search has been done.
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-04 12:10:07.922265651
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+printf-c-1.c:
+#  Implicit rule search has been done.
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-04 12:10:07.922265651
+#  File has been updated.
+#  Successfully updated.
+
+att: hola.att hola32.att hola32p.att hola64-c.att hola64.att hola64p.att libc.att minimo32-s.att printf32.att printf32e.att printf64.att hola-c.att minimo1.att minimo2.att minimo3.att printf-c-1.att printf-c-2.att addable.att bug.att fib.att hola-c++.att sum.att sum0.att sum1.att sum2.att sum3.att sumg.att sums.att variadic.att zmm.att
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
+
+printf32.att: printf32
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'printf32'
+ 
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-09-11 12:58:17.727608348
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 89):
+	objdump -Cd $< > $@
+
+# files hash-table stats:
+# Load=88/1024=9%, Rehash=0, Collisions=22/472=5%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 177 / storage = 1790 B / avg = 10 B
+# current buf: size = 8162 B / used = 1790 B / count = 177 / avg = 10 B
+
+# strcache performance: lookups = 763 / hit rate = 76%
+# hash-table stats:
+# Load=177/8192=2%, Rehash=0, Collisions=12/763=2%
+# Finished Make data base on Mon Sep 11 13:03:26 2023
+
+ 

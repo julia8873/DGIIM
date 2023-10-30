@@ -1,0 +1,72 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/gustavo/docencia/2023-2024/ec/practicas/1'
+ 
+cc -g -Og -Wall -nostartfiles hola.s -o hola
+objdump -Cd hola > hola.att
+cc -g -Og -Wall -m32 -nostartfiles hola32.s -o hola32
+ 
+objdump -Cd hola32 > hola32.att
+cc -g -Og -Wall -m32 -nostartfiles hola32p.s -o hola32p
+objdump -Cd hola32p > hola32p.att
+cc -g -Og -Wall -m64 hola64-c.s -o hola64-c
+objdump -Cd hola64-c > hola64-c.att
+cc -g -Og -Wall -m64 -nostartfiles hola64.s -o hola64
+objdump -Cd hola64 > hola64.att
+cc -g -Og -Wall -m64 -nostartfiles hola64p.s -o hola64p
+objdump -Cd hola64p > hola64p.att
+cc -g -Og -Wall libc.s -o libc
+objdump -Cd libc > libc.att
+cc -g -Og -Wall -m32 -nostartfiles minimo32-s.s -o minimo32-s
+objdump -Cd minimo32-s > minimo32-s.att
+ 
+cc -g -Og -Wall -m32 printf32.s -o printf32
+objdump -Cd printf32 > printf32.att
+cc -g -Og -Wall -m32 printf32e.s -o printf32e
+objdump -Cd printf32e > printf32e.att
+cc -g -Og -Wall -m64 printf64.s -o printf64
+objdump -Cd printf64 > printf64.att
+ 
+cc -g -Og -Wall hola-c.c -o hola-c
+objdump -Cd hola-c > hola-c.att
+cc -g -Og -Wall minimo1.c -o minimo1
+objdump -Cd minimo1 > minimo1.att
+cc -g -Og -Wall minimo2.c -o minimo2
+objdump -Cd minimo2 > minimo2.att
+ 
+cc -g -Og -Wall minimo3.c -o minimo3
+objdump -Cd minimo3 > minimo3.att
+cc -g -Og -Wall printf-c-1.c -o printf-c-1
+objdump -Cd printf-c-1 > printf-c-1.att
+cc -g -Og -Wall printf-c-2.c -o printf-c-2
+objdump -Cd printf-c-2 > printf-c-2.att
+ 
+g++ -g -Og -Wall -std=c++20 addable.cc -o addable
+objdump -Cd addable > addable.att
+g++ -g -Og -Wall bug.cc -o bug
+objdump -Cd bug > bug.att
+g++ -g -Og -Wall fib.cc -o fib
+objdump -Cd fib > fib.att
+g++ -g -Og -Wall hola-c++.cc -o hola-c++
+objdump -Cd hola-c++ > hola-c++.att
+ 
+g++ -g -Og -Wall sum.cc -o sum
+objdump -Cd sum > sum.att
+g++ -g -Og -Wall -O0 sum0.cc -o sum0
+objdump -Cd sum0 > sum0.att
+g++ -g -Og -Wall -O1 sum1.cc -o sum1
+objdump -Cd sum1 > sum1.att
+g++ -g -Og -Wall -O2 sum2.cc -o sum2
+objdump -Cd sum2 > sum2.att
+g++ -g -Og -Wall -O3 sum3.cc -o sum3
+objdump -Cd sum3 > sum3.att
+ 
+g++ -g -Og -Wall -Og sumg.cc -o sumg
+objdump -Cd sumg > sumg.att
+g++ -g -Og -Wall -Os sums.cc -o sums
+objdump -Cd sums > sums.att
+g++ -g -Og -Wall -O3 variadic.cc -o variadic
+objdump -Cd variadic > variadic.att
+g++ -g -Og -Wall -march=knl -O3 zmm.cc -o zmm
+objdump -Cd zmm > zmm.att
+make: Leaving directory '/home/gustavo/docencia/2023-2024/ec/practicas/1'
+ 
