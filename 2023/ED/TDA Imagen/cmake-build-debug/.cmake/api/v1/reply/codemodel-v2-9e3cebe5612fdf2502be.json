@@ -1,0 +1,105 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "practica2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "contraste::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-contraste-Debug-fb5e477da2d09e7f701b.json",
+					"name" : "contraste",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "icono::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-icono-Debug-20a415365dd14b7e68ca.json",
+					"name" : "icono",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "image::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-image-Debug-a605fb12b8bf5af8b3fb.json",
+					"name" : "image",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "negativo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-negativo-Debug-ee37e009828bfac3932d.json",
+					"name" : "negativo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "subimagen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-subimagen-Debug-e3a20069f0fa0ff01452.json",
+					"name" : "subimagen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "zoom::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-zoom-Debug-b43de39fc40fa2573dbe.json",
+					"name" : "zoom",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/julia/Desktop/2023/ED/TDA Imagen/cmake-build-debug",
+		"source" : "/home/julia/Desktop/2023/ED/TDA Imagen"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}

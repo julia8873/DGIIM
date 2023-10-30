@@ -1,0 +1,240 @@
+\hypertarget{classSuma}{}\doxysection{Suma Class Reference}
+\label{classSuma}\index{Suma@{Suma}}
+
+
+TDA \mbox{\hyperlink{classSuma}{Suma}}.  
+
+
+
+
+{\ttfamily \#include $<$Suma.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSuma_abfb4e23d2760ce19ad199d7adaa6885e}{Suma}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSuma_a4ffe766773746ea6b9d31a1e61d2f18c}{$\sim$\+Suma}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSuma_aa67ca2efb7eb82fba2314bb81c2f7668}{Suma}} (const \mbox{\hyperlink{classSuma}{Suma}} \&otro)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSuma}{Suma}} \& \mbox{\hyperlink{classSuma_ac829d50b709745145989ad5e0558a752}{operator=}} (const \mbox{\hyperlink{classSuma}{Suma}} \&otro)
+\begin{DoxyCompactList}\small\item\em Operador de asignación. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSuma_a61eb2fc9891443cb9b3b402e67867cce}{get\+Tam}} () const
+\begin{DoxyCompactList}\small\item\em Tamaño de la suma. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSuma_a5256b150ecef9df5fe02c1a5d4ff7d05}{get\+Valor}} () const
+\begin{DoxyCompactList}\small\item\em Valor de la suma. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSuma_a6a37adc4524d2fd41d657bf85ab66fb6}{set\+Valor}} (int valor)
+\begin{DoxyCompactList}\small\item\em Establece el valor de la suma. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSuma_a53ad2400da8006ddda25890f146e47a5}{Aniadir\+Casilla}} (\mbox{\hyperlink{structPosicion}{Posicion}} pos)
+\begin{DoxyCompactList}\small\item\em Añade una casilla a la suma. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSuma_a6c62778391dadcd0d44f11a6d6bb9316}{Elimina\+Casilla}} (\mbox{\hyperlink{structPosicion}{Posicion}} pos)
+\begin{DoxyCompactList}\small\item\em Elimina una casilla de la suma. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structPosicion}{Posicion}} \& \mbox{\hyperlink{classSuma_ad305abcff9f733ca345152751773f461}{operator\mbox{[}$\,$\mbox{]}}} (int i)
+\begin{DoxyCompactList}\small\item\em Operador de acceso a una casilla. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{structPosicion}{Posicion}} \& \mbox{\hyperlink{classSuma_a09575cf865725dc994eb440fab0cdfe0}{operator\mbox{[}$\,$\mbox{]}}} (int i) const
+\begin{DoxyCompactList}\small\item\em Operador de acceso a una casilla. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+TDA \mbox{\hyperlink{classSuma}{Suma}}. 
+
+Representa una suma de casillas.
+
+\begin{DoxyAuthor}{Author}
+Andrés Alejo Martínez 
+
+Julia Miralles Martínez 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSuma_abfb4e23d2760ce19ad199d7adaa6885e}\label{classSuma_abfb4e23d2760ce19ad199d7adaa6885e}} 
+\index{Suma@{Suma}!Suma@{Suma}}
+\index{Suma@{Suma}!Suma@{Suma}}
+\doxysubsubsection{\texorpdfstring{Suma()}{Suma()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Suma\+::\+Suma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto. 
+
+\begin{DoxyReturn}{Returns}
+Crea una suma vacía. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSuma_a4ffe766773746ea6b9d31a1e61d2f18c}\label{classSuma_a4ffe766773746ea6b9d31a1e61d2f18c}} 
+\index{Suma@{Suma}!````~Suma@{$\sim$Suma}}
+\index{````~Suma@{$\sim$Suma}!Suma@{Suma}}
+\doxysubsubsection{\texorpdfstring{$\sim$Suma()}{~Suma()}}
+{\footnotesize\ttfamily Suma\+::$\sim$\+Suma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\begin{DoxyReturn}{Returns}
+Libera la memoria dinámica reservada. 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondition}
+La \mbox{\hyperlink{classSuma}{Suma}} está vacía. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classSuma_aa67ca2efb7eb82fba2314bb81c2f7668}\label{classSuma_aa67ca2efb7eb82fba2314bb81c2f7668}} 
+\index{Suma@{Suma}!Suma@{Suma}}
+\index{Suma@{Suma}!Suma@{Suma}}
+\doxysubsubsection{\texorpdfstring{Suma()}{Suma()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Suma\+::\+Suma (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSuma}{Suma}} \&}]{otro }\end{DoxyParamCaption})}
+
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em otro} & \mbox{\hyperlink{classSuma}{Suma}} a copiar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classSuma}{Suma}}, el objeto suma creado. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSuma_a53ad2400da8006ddda25890f146e47a5}\label{classSuma_a53ad2400da8006ddda25890f146e47a5}} 
+\index{Suma@{Suma}!AniadirCasilla@{AniadirCasilla}}
+\index{AniadirCasilla@{AniadirCasilla}!Suma@{Suma}}
+\doxysubsubsection{\texorpdfstring{AniadirCasilla()}{AniadirCasilla()}}
+{\footnotesize\ttfamily void Suma\+::\+Aniadir\+Casilla (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPosicion}{Posicion}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Añade una casilla a la suma. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & Posición de la casilla añadida. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+0 \texorpdfstring{$<$}{<}= pos.\+fila \texorpdfstring{$<$}{<} 9 \&\& 0 \texorpdfstring{$<$}{<}= pos.\+columna \texorpdfstring{$<$}{<} 9 pos tiene que ser una casilla contigua a las demás. 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classSuma_a6c62778391dadcd0d44f11a6d6bb9316}\label{classSuma_a6c62778391dadcd0d44f11a6d6bb9316}} 
+\index{Suma@{Suma}!EliminaCasilla@{EliminaCasilla}}
+\index{EliminaCasilla@{EliminaCasilla}!Suma@{Suma}}
+\doxysubsubsection{\texorpdfstring{EliminaCasilla()}{EliminaCasilla()}}
+{\footnotesize\ttfamily void Suma\+::\+Elimina\+Casilla (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPosicion}{Posicion}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Elimina una casilla de la suma. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & Posición de la casilla a eliminar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+0 \texorpdfstring{$<$}{<}= pos.\+fila \texorpdfstring{$<$}{<} 9 \&\& 0 \texorpdfstring{$<$}{<}= pos.\+columna \texorpdfstring{$<$}{<} 9 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classSuma_a61eb2fc9891443cb9b3b402e67867cce}\label{classSuma_a61eb2fc9891443cb9b3b402e67867cce}} 
+\index{Suma@{Suma}!getTam@{getTam}}
+\index{getTam@{getTam}!Suma@{Suma}}
+\doxysubsubsection{\texorpdfstring{getTam()}{getTam()}}
+{\footnotesize\ttfamily int Suma\+::get\+Tam (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Tamaño de la suma. 
+
+\begin{DoxyReturn}{Returns}
+Número de posiciones que forman la suma. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSuma_a5256b150ecef9df5fe02c1a5d4ff7d05}\label{classSuma_a5256b150ecef9df5fe02c1a5d4ff7d05}} 
+\index{Suma@{Suma}!getValor@{getValor}}
+\index{getValor@{getValor}!Suma@{Suma}}
+\doxysubsubsection{\texorpdfstring{getValor()}{getValor()}}
+{\footnotesize\ttfamily int Suma\+::get\+Valor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Valor de la suma. 
+
+\begin{DoxyReturn}{Returns}
+Valor de la suma. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSuma_ac829d50b709745145989ad5e0558a752}\label{classSuma_ac829d50b709745145989ad5e0558a752}} 
+\index{Suma@{Suma}!operator=@{operator=}}
+\index{operator=@{operator=}!Suma@{Suma}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSuma}{Suma}} \& Suma\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSuma}{Suma}} \&}]{otro }\end{DoxyParamCaption})}
+
+
+
+Operador de asignación. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em otro} & \mbox{\hyperlink{classSuma}{Suma}} a copiar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Una referencia a la suma copiado. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSuma_ad305abcff9f733ca345152751773f461}\label{classSuma_ad305abcff9f733ca345152751773f461}} 
+\index{Suma@{Suma}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Suma@{Suma}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPosicion}{Posicion}} \& Suma\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Operador de acceso a una casilla. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Posición de la casilla a acceder. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Una referencia a la posición de la casilla en el sudoku. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSuma_a09575cf865725dc994eb440fab0cdfe0}\label{classSuma_a09575cf865725dc994eb440fab0cdfe0}} 
+\index{Suma@{Suma}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Suma@{Suma}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structPosicion}{Posicion}} \& Suma\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const}
+
+
+
+Operador de acceso a una casilla. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Posición de la casilla a acceder. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Una referencia constante a la posición de la casilla en el sudoku. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSuma_a6a37adc4524d2fd41d657bf85ab66fb6}\label{classSuma_a6a37adc4524d2fd41d657bf85ab66fb6}} 
+\index{Suma@{Suma}!setValor@{setValor}}
+\index{setValor@{setValor}!Suma@{Suma}}
+\doxysubsubsection{\texorpdfstring{setValor()}{setValor()}}
+{\footnotesize\ttfamily void Suma\+::set\+Valor (\begin{DoxyParamCaption}\item[{int}]{valor }\end{DoxyParamCaption})}
+
+
+
+Establece el valor de la suma. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & Valor de la suma. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+valor \texorpdfstring{$>$}{>}= 3 
+\end{DoxyPrecond}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Suma.\+h\end{DoxyCompactItemize}

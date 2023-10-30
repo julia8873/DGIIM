@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "p03_pilas_colas",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "cola_max::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cola_max-Debug-adfaa9e4b96ba4de94fe.json",
+					"name" : "cola_max",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "maxqueue::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-maxqueue-Debug-552756915658c692ed53.json",
+					"name" : "maxqueue",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "maxstack::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-maxstack-Debug-2080f49d7a291ad1104c.json",
+					"name" : "maxstack",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pila_max::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pila_max-Debug-b17cb06101d699fa1fba.json",
+					"name" : "pila_max",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/julia/Desktop/2023/ED/Pilas y Colas (copy)/cmake-build-debug",
+		"source" : "/home/julia/Desktop/2023/ED/Pilas y Colas (copy)"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}

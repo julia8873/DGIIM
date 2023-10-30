@@ -1,0 +1,115 @@
+\begin{theindex}
+
+  \item {$\sim$Casilla}
+    \subitem {Casilla}, \hyperpage{6}
+  \item {$\sim$SudokuKiller}
+    \subitem {SudokuKiller}, \hyperpage{11}
+  \item {$\sim$Suma}
+    \subitem {Suma}, \hyperpage{15}
+
+  \indexspace
+
+  \item {AniadirCasilla}
+    \subitem {Suma}, \hyperpage{16}
+  \item {AniadirSuma}
+    \subitem {SudokuKiller}, \hyperpage{12}
+
+  \indexspace
+
+  \item {Casilla}, \hyperpage{5}
+    \subitem {$\sim$Casilla}, \hyperpage{6}
+    \subitem {Casilla}, \hyperpage{6}
+    \subitem {eliminaPosibilidad}, \hyperpage{7}
+    \subitem {esPosible}, \hyperpage{7}
+    \subitem {getIndSuma}, \hyperpage{7}
+    \subitem {getNPos}, \hyperpage{8}
+    \subitem {getValor}, \hyperpage{8}
+    \subitem {mismasPosib}, \hyperpage{8}
+    \subitem {nuevaPosibilidad}, \hyperpage{9}
+    \subitem {operator=}, \hyperpage{9}
+    \subitem {setValor}, \hyperpage{9}
+
+  \indexspace
+
+  \item {DescartaPosibilidades}
+    \subitem {SudokuKiller}, \hyperpage{12}
+
+  \indexspace
+
+  \item {EliminaCasilla}
+    \subitem {Suma}, \hyperpage{16}
+  \item {eliminaPosibilidad}
+    \subitem {Casilla}, \hyperpage{7}
+  \item {esPosible}
+    \subitem {Casilla}, \hyperpage{7}
+
+  \indexspace
+
+  \item {getIndSuma}
+    \subitem {Casilla}, \hyperpage{7}
+  \item {getNPos}
+    \subitem {Casilla}, \hyperpage{8}
+  \item {getTam}
+    \subitem {Suma}, \hyperpage{16}
+  \item {getValor}
+    \subitem {Casilla}, \hyperpage{8}
+    \subitem {Suma}, \hyperpage{17}
+
+  \indexspace
+
+  \item {mismasPosib}
+    \subitem {Casilla}, \hyperpage{8}
+
+  \indexspace
+
+  \item {nuevaPosibilidad}
+    \subitem {Casilla}, \hyperpage{9}
+
+  \indexspace
+
+  \item {operator=}
+    \subitem {Casilla}, \hyperpage{9}
+    \subitem {SudokuKiller}, \hyperpage{13}
+    \subitem {Suma}, \hyperpage{17}
+  \item {operator[]}
+    \subitem {Suma}, \hyperpage{17, 18}
+
+  \indexspace
+
+  \item {Posicion}, \hyperpage{10}
+
+  \indexspace
+
+  \item {RellenarCasilla}
+    \subitem {SudokuKiller}, \hyperpage{13}
+
+  \indexspace
+
+  \item {setValor}
+    \subitem {Casilla}, \hyperpage{9}
+    \subitem {Suma}, \hyperpage{18}
+  \item {SudokuKiller}, \hyperpage{10}
+    \subitem {$\sim$SudokuKiller}, \hyperpage{11}
+    \subitem {AniadirSuma}, \hyperpage{12}
+    \subitem {DescartaPosibilidades}, \hyperpage{12}
+    \subitem {operator=}, \hyperpage{13}
+    \subitem {RellenarCasilla}, \hyperpage{13}
+    \subitem {SudokuKiller}, \hyperpage{11, 12}
+    \subitem {toString}, \hyperpage{14}
+  \item {Suma}, \hyperpage{14}
+    \subitem {$\sim$Suma}, \hyperpage{15}
+    \subitem {AniadirCasilla}, \hyperpage{16}
+    \subitem {EliminaCasilla}, \hyperpage{16}
+    \subitem {getTam}, \hyperpage{16}
+    \subitem {getValor}, \hyperpage{17}
+    \subitem {operator=}, \hyperpage{17}
+    \subitem {operator[]}, \hyperpage{17, 18}
+    \subitem {setValor}, \hyperpage{18}
+    \subitem {Suma}, \hyperpage{15}
+
+  \indexspace
+
+  \item {toString}
+    \subitem {SudokuKiller}, \hyperpage{14}
+
+\end{theindex}

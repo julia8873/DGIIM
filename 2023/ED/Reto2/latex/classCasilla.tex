@@ -1,0 +1,258 @@
+\hypertarget{classCasilla}{}\doxysection{Casilla Class Reference}
+\label{classCasilla}\index{Casilla@{Casilla}}
+
+
+TDA \mbox{\hyperlink{classCasilla}{Casilla}}.  
+
+
+
+
+{\ttfamily \#include $<$Casilla.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCasilla_a3845e29668cd4299582334c29f3e28a8}{Casilla}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCasilla_a55fabed305549391c98f9e296ff602c3}{$\sim$\+Casilla}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCasilla_aef1b3fde03c5e506b6304ba87a440eb4}{Casilla}} (const \mbox{\hyperlink{classCasilla}{Casilla}} \&otro)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCasilla}{Casilla}} \& \mbox{\hyperlink{classCasilla_a6d3aa10249dabd6f2c0632ada242f567}{operator=}} (const \mbox{\hyperlink{classCasilla}{Casilla}} \&otro)
+\begin{DoxyCompactList}\small\item\em Operador de asignación. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCasilla_a745eff6482698bfd3fdd8980f0557e87}{get\+Valor}} () const
+\begin{DoxyCompactList}\small\item\em Valor de la casilla. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCasilla_ae5e317a9a69742d2b98620a77774f944}{set\+Valor}} (int valor)
+\begin{DoxyCompactList}\small\item\em Establece el valor de la casilla. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCasilla_afb2467b8317129000273596f9f36e330}{get\+Ind\+Suma}} () const
+\begin{DoxyCompactList}\small\item\em Índice de la suma a la que pertenece la casilla. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCasilla_ad98451f9f3c54f717d5612ba76afaaa4}{get\+NPos}} () const
+\begin{DoxyCompactList}\small\item\em Número de posibilidades para la casilla. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCasilla_a2ea986dbf07188760d12dc599a5af175}{elimina\+Posibilidad}} (int valor)
+\begin{DoxyCompactList}\small\item\em Elimina una posibilidad de la casilla. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCasilla_a0074a908b1a36a324f13dfccba20cd83}{nueva\+Posibilidad}} (int valor)
+\begin{DoxyCompactList}\small\item\em Añade una posibilidad a la casilla. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCasilla_a3d89edd4e9b9666fed66a144561eaed8}{mismas\+Posib}} (\mbox{\hyperlink{classCasilla}{Casilla}} casilla)
+\begin{DoxyCompactList}\small\item\em Comprueba si dos casillas tienen las mismas posibilidades. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCasilla_a0069661ab2eba1c8429ff61f4c5702a8}{es\+Posible}} (int valor) const
+\begin{DoxyCompactList}\small\item\em Comprueba si un valor es posible para la casilla. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+TDA \mbox{\hyperlink{classCasilla}{Casilla}}. 
+
+Representa una casilla de un sudoku killer.
+\begin{DoxyItemize}
+\item Si la casilla tiene un 0, se considera vacía.
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Andrés Alejo Martínez 
+
+Julia Miralles Martínez 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCasilla_a3845e29668cd4299582334c29f3e28a8}\label{classCasilla_a3845e29668cd4299582334c29f3e28a8}} 
+\index{Casilla@{Casilla}!Casilla@{Casilla}}
+\index{Casilla@{Casilla}!Casilla@{Casilla}}
+\doxysubsubsection{\texorpdfstring{Casilla()}{Casilla()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Casilla\+::\+Casilla (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto. 
+
+\begin{DoxyReturn}{Returns}
+Crea una casilla vacía, con valor 0 y posibilidades = \{1,2,3,4,5,6,7,8,9\}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCasilla_a55fabed305549391c98f9e296ff602c3}\label{classCasilla_a55fabed305549391c98f9e296ff602c3}} 
+\index{Casilla@{Casilla}!````~Casilla@{$\sim$Casilla}}
+\index{````~Casilla@{$\sim$Casilla}!Casilla@{Casilla}}
+\doxysubsubsection{\texorpdfstring{$\sim$Casilla()}{~Casilla()}}
+{\footnotesize\ttfamily Casilla\+::$\sim$\+Casilla (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\begin{DoxyReturn}{Returns}
+Libera la memoria dinámica reservada. 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondition}
+La casilla está vacía. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classCasilla_aef1b3fde03c5e506b6304ba87a440eb4}\label{classCasilla_aef1b3fde03c5e506b6304ba87a440eb4}} 
+\index{Casilla@{Casilla}!Casilla@{Casilla}}
+\index{Casilla@{Casilla}!Casilla@{Casilla}}
+\doxysubsubsection{\texorpdfstring{Casilla()}{Casilla()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Casilla\+::\+Casilla (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCasilla}{Casilla}} \&}]{otro }\end{DoxyParamCaption})}
+
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em otro} & \mbox{\hyperlink{classCasilla}{Casilla}} a copiar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classCasilla}{Casilla}}, el objeto casilla creada. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCasilla_a2ea986dbf07188760d12dc599a5af175}\label{classCasilla_a2ea986dbf07188760d12dc599a5af175}} 
+\index{Casilla@{Casilla}!eliminaPosibilidad@{eliminaPosibilidad}}
+\index{eliminaPosibilidad@{eliminaPosibilidad}!Casilla@{Casilla}}
+\doxysubsubsection{\texorpdfstring{eliminaPosibilidad()}{eliminaPosibilidad()}}
+{\footnotesize\ttfamily void Casilla\+::elimina\+Posibilidad (\begin{DoxyParamCaption}\item[{int}]{valor }\end{DoxyParamCaption})}
+
+
+
+Elimina una posibilidad de la casilla. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & Valor a eliminar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+1 \texorpdfstring{$<$}{<}= valor \texorpdfstring{$<$}{<}= 9 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classCasilla_a0069661ab2eba1c8429ff61f4c5702a8}\label{classCasilla_a0069661ab2eba1c8429ff61f4c5702a8}} 
+\index{Casilla@{Casilla}!esPosible@{esPosible}}
+\index{esPosible@{esPosible}!Casilla@{Casilla}}
+\doxysubsubsection{\texorpdfstring{esPosible()}{esPosible()}}
+{\footnotesize\ttfamily bool Casilla\+::es\+Posible (\begin{DoxyParamCaption}\item[{int}]{valor }\end{DoxyParamCaption}) const}
+
+
+
+Comprueba si un valor es posible para la casilla. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & Valor a comprobar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si el valor es posible, false en caso contrario. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCasilla_afb2467b8317129000273596f9f36e330}\label{classCasilla_afb2467b8317129000273596f9f36e330}} 
+\index{Casilla@{Casilla}!getIndSuma@{getIndSuma}}
+\index{getIndSuma@{getIndSuma}!Casilla@{Casilla}}
+\doxysubsubsection{\texorpdfstring{getIndSuma()}{getIndSuma()}}
+{\footnotesize\ttfamily int Casilla\+::get\+Ind\+Suma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Índice de la suma a la que pertenece la casilla. 
+
+\begin{DoxyReturn}{Returns}
+Índice de la suma a la que pertenece la casilla. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCasilla_ad98451f9f3c54f717d5612ba76afaaa4}\label{classCasilla_ad98451f9f3c54f717d5612ba76afaaa4}} 
+\index{Casilla@{Casilla}!getNPos@{getNPos}}
+\index{getNPos@{getNPos}!Casilla@{Casilla}}
+\doxysubsubsection{\texorpdfstring{getNPos()}{getNPos()}}
+{\footnotesize\ttfamily int Casilla\+::get\+NPos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Número de posibilidades para la casilla. 
+
+\begin{DoxyReturn}{Returns}
+Número de posibilidades para la casilla. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCasilla_a745eff6482698bfd3fdd8980f0557e87}\label{classCasilla_a745eff6482698bfd3fdd8980f0557e87}} 
+\index{Casilla@{Casilla}!getValor@{getValor}}
+\index{getValor@{getValor}!Casilla@{Casilla}}
+\doxysubsubsection{\texorpdfstring{getValor()}{getValor()}}
+{\footnotesize\ttfamily int Casilla\+::get\+Valor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Valor de la casilla. 
+
+\begin{DoxyReturn}{Returns}
+Valor de la casilla. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCasilla_a3d89edd4e9b9666fed66a144561eaed8}\label{classCasilla_a3d89edd4e9b9666fed66a144561eaed8}} 
+\index{Casilla@{Casilla}!mismasPosib@{mismasPosib}}
+\index{mismasPosib@{mismasPosib}!Casilla@{Casilla}}
+\doxysubsubsection{\texorpdfstring{mismasPosib()}{mismasPosib()}}
+{\footnotesize\ttfamily bool Casilla\+::mismas\+Posib (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCasilla}{Casilla}}}]{casilla }\end{DoxyParamCaption})}
+
+
+
+Comprueba si dos casillas tienen las mismas posibilidades. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em casilla} & \mbox{\hyperlink{classCasilla}{Casilla}} a comparar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si las casillas tienen las mismas posibilidades, false en caso contrario. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCasilla_a0074a908b1a36a324f13dfccba20cd83}\label{classCasilla_a0074a908b1a36a324f13dfccba20cd83}} 
+\index{Casilla@{Casilla}!nuevaPosibilidad@{nuevaPosibilidad}}
+\index{nuevaPosibilidad@{nuevaPosibilidad}!Casilla@{Casilla}}
+\doxysubsubsection{\texorpdfstring{nuevaPosibilidad()}{nuevaPosibilidad()}}
+{\footnotesize\ttfamily void Casilla\+::nueva\+Posibilidad (\begin{DoxyParamCaption}\item[{int}]{valor }\end{DoxyParamCaption})}
+
+
+
+Añade una posibilidad a la casilla. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & Valor a añadir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+1 \texorpdfstring{$<$}{<}= valor \texorpdfstring{$<$}{<}= 9 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classCasilla_a6d3aa10249dabd6f2c0632ada242f567}\label{classCasilla_a6d3aa10249dabd6f2c0632ada242f567}} 
+\index{Casilla@{Casilla}!operator=@{operator=}}
+\index{operator=@{operator=}!Casilla@{Casilla}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCasilla}{Casilla}} \& Casilla\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCasilla}{Casilla}} \&}]{otro }\end{DoxyParamCaption})}
+
+
+
+Operador de asignación. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em otro} & \mbox{\hyperlink{classCasilla}{Casilla}} a copiar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Una referencia a la casilla copiada. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCasilla_ae5e317a9a69742d2b98620a77774f944}\label{classCasilla_ae5e317a9a69742d2b98620a77774f944}} 
+\index{Casilla@{Casilla}!setValor@{setValor}}
+\index{setValor@{setValor}!Casilla@{Casilla}}
+\doxysubsubsection{\texorpdfstring{setValor()}{setValor()}}
+{\footnotesize\ttfamily void Casilla\+::set\+Valor (\begin{DoxyParamCaption}\item[{int}]{valor }\end{DoxyParamCaption})}
+
+
+
+Establece el valor de la casilla. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & Valor de la casilla. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+0 \texorpdfstring{$<$}{<}= valor \texorpdfstring{$<$}{<}= 9 
+\end{DoxyPrecond}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Casilla.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,18 @@
+# ninja log v5
+441	554	1697643570019097139	subimagen	6a328d95a9b88af8
+2	501	1697646533822009893	CMakeFiles/image.dir/estudiante/src/imageop.cpp.o	645fe3c61803726a
+2	434	1697643576703351892	CMakeFiles/zoom.dir/estudiante/src/zoom.cpp.o	713f23585e0cf53
+3	454	1697646533778009359	CMakeFiles/contraste.dir/estudiante/src/contraste.cpp.o	5984506805ae0de4
+2	531	1697645305244796465	CMakeFiles/image.dir/estudiante/src/subimagen.cpp.o	6e4c720cf7b5cac6
+1	49	1697730105366893905	build.ninja	eabad6bf041571b4
+533	703	1697646534022012322	contraste	949c951b66efc03f
+4	446	1696957818227291485	CMakeFiles/negativo.dir/estudiante/src/negativo.cpp.o	a5c643926d99e257
+1	457	1697643040613468763	CMakeFiles/image.dir/estudiante/src/image.cpp.o	1af4aea70dee0c4d
+2	529	1697645305240796326	CMakeFiles/image.dir/estudiante/src/zoom.cpp.o	c37c97e48d4f52b1
+3	406	1697643569871091495	CMakeFiles/subimagen.dir/estudiante/src/subimagen.cpp.o	dd58b45900ca05b3
+519	676	1696957818455290198	negativo	52ba28992fc1c783
+442	557	1697643576823356463	zoom	8dc3d7f43beb67da
+2	500	1696957818279291192	CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o	cdb52207e1d3f187
+501	533	1697646533858010330	libimage.a	fee954886348eefb
+3	611	1697645305324799237	CMakeFiles/icono.dir/estudiante/src/icono.cpp.o	5efea8d541fd69b6
+495	617	1697645645103363123	icono	a2d4c5bd05e6a191

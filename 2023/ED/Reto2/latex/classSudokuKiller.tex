@@ -1,0 +1,184 @@
+\hypertarget{classSudokuKiller}{}\doxysection{Sudoku\+Killer Class Reference}
+\label{classSudokuKiller}\index{SudokuKiller@{SudokuKiller}}
+
+
+TDA \mbox{\hyperlink{classSudokuKiller}{Sudoku\+Killer}}.  
+
+
+
+
+{\ttfamily \#include $<$Sudoku\+Killer.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSudokuKiller_a175de207a51168d2ad80d187c459d94d}{Sudoku\+Killer}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSudokuKiller_a278cca6d5ad611c5cc3a756c470481b3}{$\sim$\+Sudoku\+Killer}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSudokuKiller_af6510bda22973c6dbcac89fb70fb9795}{Sudoku\+Killer}} (const \mbox{\hyperlink{classSudokuKiller}{Sudoku\+Killer}} \&otro)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSudokuKiller}{Sudoku\+Killer}} \& \mbox{\hyperlink{classSudokuKiller_a0d20a643d5b10e496a8761097a588fc3}{operator=}} (const \mbox{\hyperlink{classSudokuKiller}{Sudoku\+Killer}} \&otro)
+\begin{DoxyCompactList}\small\item\em Operador de asignación. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSudokuKiller_a44bbf1f26e5927162381747f47b4c8a9}{Rellenar\+Casilla}} (\mbox{\hyperlink{structPosicion}{Posicion}} pos, int num)
+\begin{DoxyCompactList}\small\item\em Rellena una casilla del sudoku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSudokuKiller_a700943e28269331598906b340ebd8387}{Aniadir\+Suma}} (\mbox{\hyperlink{classSuma}{Suma}} \&sum)
+\begin{DoxyCompactList}\small\item\em Añade una suma al tablero del sudoku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSudokuKiller_a02f55d4de64ce428ba8e6a47397ea6c2}{Descarta\+Posibilidades}} (\mbox{\hyperlink{structPosicion}{Posicion}} pos)
+\begin{DoxyCompactList}\small\item\em Elimina los números que no puedan estar en una casilla (ver clase \mbox{\hyperlink{classCasilla}{Casilla}}). \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classSudokuKiller_ae1e97a20035f0cdac3ce7b7015102a6e}{to\+String}} () const
+\begin{DoxyCompactList}\small\item\em Formatea el sudoku killer en un string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+TDA \mbox{\hyperlink{classSudokuKiller}{Sudoku\+Killer}}. 
+
+Representa un sudoku killer, un sudoku donde se guardan las sumas de casillas contiguas.
+
+\begin{DoxyAuthor}{Author}
+Andrés Alejo Martínez 
+
+Julia Miralles Martínez 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSudokuKiller_a175de207a51168d2ad80d187c459d94d}\label{classSudokuKiller_a175de207a51168d2ad80d187c459d94d}} 
+\index{SudokuKiller@{SudokuKiller}!SudokuKiller@{SudokuKiller}}
+\index{SudokuKiller@{SudokuKiller}!SudokuKiller@{SudokuKiller}}
+\doxysubsubsection{\texorpdfstring{SudokuKiller()}{SudokuKiller()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Sudoku\+Killer\+::\+Sudoku\+Killer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto. 
+
+\begin{DoxyReturn}{Returns}
+Crea un sudoku killer vacío. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSudokuKiller_a278cca6d5ad611c5cc3a756c470481b3}\label{classSudokuKiller_a278cca6d5ad611c5cc3a756c470481b3}} 
+\index{SudokuKiller@{SudokuKiller}!````~SudokuKiller@{$\sim$SudokuKiller}}
+\index{````~SudokuKiller@{$\sim$SudokuKiller}!SudokuKiller@{SudokuKiller}}
+\doxysubsubsection{\texorpdfstring{$\sim$SudokuKiller()}{~SudokuKiller()}}
+{\footnotesize\ttfamily Sudoku\+Killer\+::$\sim$\+Sudoku\+Killer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\begin{DoxyReturn}{Returns}
+Libera la memoria dinámica reservada. 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondition}
+El \mbox{\hyperlink{classSudokuKiller}{Sudoku\+Killer}} queda vacío. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classSudokuKiller_af6510bda22973c6dbcac89fb70fb9795}\label{classSudokuKiller_af6510bda22973c6dbcac89fb70fb9795}} 
+\index{SudokuKiller@{SudokuKiller}!SudokuKiller@{SudokuKiller}}
+\index{SudokuKiller@{SudokuKiller}!SudokuKiller@{SudokuKiller}}
+\doxysubsubsection{\texorpdfstring{SudokuKiller()}{SudokuKiller()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Sudoku\+Killer\+::\+Sudoku\+Killer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSudokuKiller}{Sudoku\+Killer}} \&}]{otro }\end{DoxyParamCaption})}
+
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em otro} & Sudoku killer a copiar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classSudokuKiller}{Sudoku\+Killer}}, el objeto sudoku creado. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSudokuKiller_a700943e28269331598906b340ebd8387}\label{classSudokuKiller_a700943e28269331598906b340ebd8387}} 
+\index{SudokuKiller@{SudokuKiller}!AniadirSuma@{AniadirSuma}}
+\index{AniadirSuma@{AniadirSuma}!SudokuKiller@{SudokuKiller}}
+\doxysubsubsection{\texorpdfstring{AniadirSuma()}{AniadirSuma()}}
+{\footnotesize\ttfamily void Sudoku\+Killer\+::\+Aniadir\+Suma (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSuma}{Suma}} \&}]{sum }\end{DoxyParamCaption})}
+
+
+
+Añade una suma al tablero del sudoku. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sum} & \mbox{\hyperlink{classSuma}{Suma}} a añadir. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSudokuKiller_a02f55d4de64ce428ba8e6a47397ea6c2}\label{classSudokuKiller_a02f55d4de64ce428ba8e6a47397ea6c2}} 
+\index{SudokuKiller@{SudokuKiller}!DescartaPosibilidades@{DescartaPosibilidades}}
+\index{DescartaPosibilidades@{DescartaPosibilidades}!SudokuKiller@{SudokuKiller}}
+\doxysubsubsection{\texorpdfstring{DescartaPosibilidades()}{DescartaPosibilidades()}}
+{\footnotesize\ttfamily void Sudoku\+Killer\+::\+Descarta\+Posibilidades (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPosicion}{Posicion}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Elimina los números que no puedan estar en una casilla (ver clase \mbox{\hyperlink{classCasilla}{Casilla}}). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & Posición de la casilla a comprobar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+0 \texorpdfstring{$<$}{<}= pos.\+fila \texorpdfstring{$<$}{<} 9 \&\& 0 \texorpdfstring{$<$}{<}= pos.\+columna \texorpdfstring{$<$}{<} 9 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classSudokuKiller_a0d20a643d5b10e496a8761097a588fc3}\label{classSudokuKiller_a0d20a643d5b10e496a8761097a588fc3}} 
+\index{SudokuKiller@{SudokuKiller}!operator=@{operator=}}
+\index{operator=@{operator=}!SudokuKiller@{SudokuKiller}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSudokuKiller}{Sudoku\+Killer}} \& Sudoku\+Killer\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSudokuKiller}{Sudoku\+Killer}} \&}]{otro }\end{DoxyParamCaption})}
+
+
+
+Operador de asignación. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em otro} & Sudoku killer a copiar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Una referencia al sudoku killer copiado. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSudokuKiller_a44bbf1f26e5927162381747f47b4c8a9}\label{classSudokuKiller_a44bbf1f26e5927162381747f47b4c8a9}} 
+\index{SudokuKiller@{SudokuKiller}!RellenarCasilla@{RellenarCasilla}}
+\index{RellenarCasilla@{RellenarCasilla}!SudokuKiller@{SudokuKiller}}
+\doxysubsubsection{\texorpdfstring{RellenarCasilla()}{RellenarCasilla()}}
+{\footnotesize\ttfamily void Sudoku\+Killer\+::\+Rellenar\+Casilla (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPosicion}{Posicion}}}]{pos,  }\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Rellena una casilla del sudoku. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & Posición de la casilla a rellenar. \\
+\hline
+{\em num} & Número a introducir en la casilla. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+0 \texorpdfstring{$<$}{<}= pos.\+fila \texorpdfstring{$<$}{<} 9 \&\& 0 \texorpdfstring{$<$}{<}= pos.\+columna \texorpdfstring{$<$}{<} 9 \&\& 1 \texorpdfstring{$<$}{<}= num \texorpdfstring{$<$}{<}= 9 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classSudokuKiller_ae1e97a20035f0cdac3ce7b7015102a6e}\label{classSudokuKiller_ae1e97a20035f0cdac3ce7b7015102a6e}} 
+\index{SudokuKiller@{SudokuKiller}!toString@{toString}}
+\index{toString@{toString}!SudokuKiller@{SudokuKiller}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily string Sudoku\+Killer\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Formatea el sudoku killer en un string. 
+
+\begin{DoxyReturn}{Returns}
+String con el sudoku killer formateado. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Sudoku\+Killer.\+h\end{DoxyCompactItemize}

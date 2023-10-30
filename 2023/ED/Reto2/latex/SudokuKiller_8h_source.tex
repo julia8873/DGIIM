@@ -1,0 +1,47 @@
+\hypertarget{SudokuKiller_8h_source}{}\doxysection{Sudoku\+Killer.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include <Casilla.h>}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <Suma.h>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{10 \textcolor{keyword}{struct }\mbox{\hyperlink{structPosicion}{Posicion}} \{}
+\DoxyCodeLine{11   \textcolor{keywordtype}{int} fila;}
+\DoxyCodeLine{12   \textcolor{keywordtype}{int} columna;}
+\DoxyCodeLine{13 \};}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 }
+\DoxyCodeLine{25 \textcolor{keyword}{class }\mbox{\hyperlink{classSudokuKiller}{SudokuKiller}} \{}
+\DoxyCodeLine{26 \textcolor{keyword}{private}:}
+\DoxyCodeLine{27   \mbox{\hyperlink{classCasilla}{Casilla}} sudoku[9][9]; }
+\DoxyCodeLine{28   \mbox{\hyperlink{classSuma}{Suma}} *sumas; }
+\DoxyCodeLine{29   \textcolor{keywordtype}{int} nSumas; }
+\DoxyCodeLine{38   \textcolor{keywordtype}{bool} EstaEnFila(\textcolor{keywordtype}{int} fila, \textcolor{keywordtype}{int} num) \textcolor{keyword}{const};}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{47   \textcolor{keywordtype}{bool} EstaEnColumna(\textcolor{keywordtype}{int} columna, \textcolor{keywordtype}{int} num) \textcolor{keyword}{const};}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{56   \textcolor{keywordtype}{bool} EstaEnBloque(\mbox{\hyperlink{structPosicion}{Posicion}} pos, \textcolor{keywordtype}{int} num) \textcolor{keyword}{const};}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58 \textcolor{keyword}{public}: }
+\DoxyCodeLine{63   \mbox{\hyperlink{classSudokuKiller_a175de207a51168d2ad80d187c459d94d}{SudokuKiller}}();}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{70   \mbox{\hyperlink{classSudokuKiller_a278cca6d5ad611c5cc3a756c470481b3}{\string~SudokuKiller}}();}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{77   \mbox{\hyperlink{classSudokuKiller_af6510bda22973c6dbcac89fb70fb9795}{SudokuKiller}}(\textcolor{keyword}{const} \mbox{\hyperlink{classSudokuKiller}{SudokuKiller}}\& otro);}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{84   \mbox{\hyperlink{classSudokuKiller}{SudokuKiller}}\& \mbox{\hyperlink{classSudokuKiller_a0d20a643d5b10e496a8761097a588fc3}{operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{classSudokuKiller}{SudokuKiller}}\& otro);}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{93   \textcolor{keywordtype}{void} \mbox{\hyperlink{classSudokuKiller_a44bbf1f26e5927162381747f47b4c8a9}{RellenarCasilla}}(\mbox{\hyperlink{structPosicion}{Posicion}} pos, \textcolor{keywordtype}{int} num);}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{99   \textcolor{keywordtype}{void} \mbox{\hyperlink{classSudokuKiller_a700943e28269331598906b340ebd8387}{AniadirSuma}}(\mbox{\hyperlink{classSuma}{Suma}} \&sum);}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{106   \textcolor{keywordtype}{void} \mbox{\hyperlink{classSudokuKiller_a02f55d4de64ce428ba8e6a47397ea6c2}{DescartaPosibilidades}}(\mbox{\hyperlink{structPosicion}{Posicion}} pos);}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{112   \textcolor{keywordtype}{string} \mbox{\hyperlink{classSudokuKiller_ae1e97a20035f0cdac3ce7b7015102a6e}{toString}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{113 \};}
+\DoxyCodeLine{114 }
+\DoxyCodeLine{121   ostream\& operator<<(ostream \&os, \textcolor{keyword}{const} \mbox{\hyperlink{classSudokuKiller}{SudokuKiller}} \&sudoku);}
+
+\end{DoxyCode}

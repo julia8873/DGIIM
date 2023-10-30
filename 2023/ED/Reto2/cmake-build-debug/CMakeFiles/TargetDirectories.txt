@@ -1,0 +1,3 @@
+/home/julia/Desktop/2023/ED/Reto2/cmake-build-debug/CMakeFiles/Reto2.dir
+/home/julia/Desktop/2023/ED/Reto2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/julia/Desktop/2023/ED/Reto2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

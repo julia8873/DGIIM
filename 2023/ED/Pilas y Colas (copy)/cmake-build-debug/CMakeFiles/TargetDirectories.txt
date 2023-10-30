@@ -1,0 +1,6 @@
+/home/julia/Desktop/2023/ED/Pilas y Colas (copy)/cmake-build-debug/CMakeFiles/maxstack.dir
+/home/julia/Desktop/2023/ED/Pilas y Colas (copy)/cmake-build-debug/CMakeFiles/maxqueue.dir
+/home/julia/Desktop/2023/ED/Pilas y Colas (copy)/cmake-build-debug/CMakeFiles/pila_max.dir
+/home/julia/Desktop/2023/ED/Pilas y Colas (copy)/cmake-build-debug/CMakeFiles/cola_max.dir
+/home/julia/Desktop/2023/ED/Pilas y Colas (copy)/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/julia/Desktop/2023/ED/Pilas y Colas (copy)/cmake-build-debug/CMakeFiles/rebuild_cache.dir

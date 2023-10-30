@@ -1,0 +1,8 @@
+/home/julia/Desktop/2023/ED/TDA Imagen/cmake-build-debug/CMakeFiles/image.dir
+/home/julia/Desktop/2023/ED/TDA Imagen/cmake-build-debug/CMakeFiles/negativo.dir
+/home/julia/Desktop/2023/ED/TDA Imagen/cmake-build-debug/CMakeFiles/subimagen.dir
+/home/julia/Desktop/2023/ED/TDA Imagen/cmake-build-debug/CMakeFiles/zoom.dir
+/home/julia/Desktop/2023/ED/TDA Imagen/cmake-build-debug/CMakeFiles/icono.dir
+/home/julia/Desktop/2023/ED/TDA Imagen/cmake-build-debug/CMakeFiles/contraste.dir
+/home/julia/Desktop/2023/ED/TDA Imagen/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/julia/Desktop/2023/ED/TDA Imagen/cmake-build-debug/CMakeFiles/rebuild_cache.dir
