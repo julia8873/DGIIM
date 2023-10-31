@@ -7,7 +7,6 @@
 //
 
 #include <iostream>
-#include <cstring>
 #include <cstdlib>
 
 #include <image.h>
@@ -71,9 +70,9 @@ int main(int argc, char *argv[]) {
     }
 
     // EXTRA: comprobar si imágen es correcta
-    Image expected;
-    expected.Load("/home/julia/Desktop/2023/ED/codigo/expected/zoom_pub.pgm");
-    cout << "Iguales? " << boolalpha << final.Iguales(expected) << endl;
+    // Image expected;
+    // expected.Load("/home/julia/Desktop/DGIIM/2023/ED/TDA Imagen/expected/zoom_pub.pgm");
+    // cout << "Iguales? " << boolalpha << final.Iguales(expected) << endl;
 
     return 0;
 }

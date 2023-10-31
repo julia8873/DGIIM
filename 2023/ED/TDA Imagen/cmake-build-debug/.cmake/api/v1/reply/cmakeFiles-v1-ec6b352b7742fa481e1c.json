@@ -748,13 +748,16 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"path" : "Doxyfile.in"
 		}
 	],
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/julia/Desktop/2023/ED/TDA Imagen/cmake-build-debug",
-		"source" : "/home/julia/Desktop/2023/ED/TDA Imagen"
+		"build" : "/home/julia/Desktop/DGIIM/2023/ED/TDA Imagen/cmake-build-debug",
+		"source" : "/home/julia/Desktop/DGIIM/2023/ED/TDA Imagen"
 	},
 	"version" : 
 	{

@@ -248,30 +248,81 @@ public :
       */
     bool Load (const char * file_path);
 
-    // Invierte
+    /**
+      * @brief Invierte una imágen
+      * @post La imagen previamente almacenada en el objeto que llama a la función se modifica invirtiéndola.
+      */
     void Invert();
 
-    // Modifica el contraste de una Imagen .
+    /**
+      * @brief Ajusta el contraste de una imágen usando la fórmula:
+      *     T(z) = z' = min + [((max – min) / (b – a)) * (z – a)]
+      * @param in1 Umbral inferior de la imagen de entrada
+      * @param in2 Umbral superior de la imagen de entrada
+      * @param out1 Umbral inferior de la imagen de salida
+      * @param out2  Umbral superior de la imagen de salida
+      * @pre 0 <= (in1, in2, out1, out2) <= 255
+      * @pre in1 < in2
+      * @pre out1 < out2
+      * @post La imagen previamente almacenada en el objeto que llama a la función se modifica.
+      */
     void AdjustContrast (byte in1, byte in2, byte out1, byte out2);
 
-    // Calcula la media de los píxeles de una imagen entera o de un fragmento de ésta.
+    /**
+      * @brief Calcula la media de un rectángulo de píxeles de la imágen
+      * @param i Fila de la esquina superior izquierda
+      * @param j Columna de la esquina superior izquierda
+      * @param height Altura del rectángulo
+      * @param width Anchura del rectángulo
+      * @pre 0 <= i < get_rows()
+      * @pre 0 <= j < get_cols()
+      * @pre 0 <= height <= get_rows()
+      * @pre 0 <= width <= get_cols()
+      * @return La media de los píxeles de la subimagen de altura @p height y anchura @p width que comienza en el píxel (@p i, @p j).
+      * @post La imagen no se modifica.
+      */
     double Mean (int i, int j, int height, int width) const;
 
-    // Genera un icono como reducción de una imagen.
+    /**
+      * @brief Genera un icono como reducción de una imagen.
+      * @param factor Factor de reducción de la imágen original con respecto al icono
+      * @pre 0 < factor
+      * @return La imagen iconizada
+      * @post La imagen no se modifica.
+      * @post La imagen resultante tendrá tamaño int(filas/factor) x int(columnas/factor). Descartando los decimales de la división
+      */
     Image Subsample(int factor) const;
 
-    // Genera una subimagen.
+    /**
+      * @brief Genera una subimagen
+      * @param nrow Fila inicial para recortar
+      * @param ncol Columna inicial para recortar
+      * @param height Número de filas
+      * @param width Número de columnas
+      * @pre 0 <= nrow < get_rows()
+      * @pre 0 <= ncol < get_cols()
+      * @pre 0 <= height <= get_rows()
+      * @pre 0 <= width <= get_cols()
+      * @return La imagen con el recorte
+      * @post La imagen no se modifica.
+      */
     Image Crop(int nrow, int ncol, int height, int width) const;
 
-    // Genera una imagen aumentada 2x.
+    /**
+      * @brief Genera una imagen con el doble de tamaño que la original
+      * @return La imagen con el doble de tamaño
+      * @post La imagen no se modifica.
+      * @post La imagen resultante tendrá tamaño (2*filas-1) x (2*columnas-1)
+      */
     Image Zoom2X() const;
 
-    // Baraja pseudoaleatoriamente las filas de una imagen.
-    void ShuffleRows();
-
-    // Compara si dos imágenes son iguales
+    /**
+      * @brief Compara las dos imágenes
+      * @param otro Imagen con la que comparar
+      * @return true si las imágenes son iguales, false en caso contrario
+      * @post La imagen no se modifica.
+      */
     bool Iguales(Image &otro) const;
-
 
 } ;
 

@@ -1,6 +1,3 @@
-//
-// Created by julia on 10/10/2023.
-//
 
 // Fichero: contraste.cpp
 // Crea una imágen con diferente contraste
@@ -23,7 +20,7 @@ int main(int argc, char *argv[]) {
     // Comprobar validez de la llamada
     if (argc != 7) {
         cerr << "Error: Numero incorrecto de parametros.\n";
-        cerr << "Uso: zoom <FichImagenOriginal> <FichImagenDestino> <e1> <e2> <s1> <s2> \n";
+        cerr << "Uso: contraste <FichImagenOriginal> <FichImagenDestino> <e1> <e2> <s1> <s2> \n";
         exit(1);
     }
 
@@ -66,9 +63,9 @@ int main(int argc, char *argv[]) {
     }
 
     // EXTRA: comprobar si imágen es correcta
-    Image expected;
-    expected.Load("/home/julia/Desktop/2023/ED/codigo/expected/contraste_pub.pgm");
-    cout << "Iguales? " << boolalpha << image.Iguales(expected) << endl;
+    // Image expected;
+    // expected.Load("/home/julia/Desktop/DGIIM/2023/ED/TDA Imagen/img/vacas.pgm");
+    // cout << "Iguales? " << boolalpha << image.Iguales(expected) << endl;
 
     return 0;
 }

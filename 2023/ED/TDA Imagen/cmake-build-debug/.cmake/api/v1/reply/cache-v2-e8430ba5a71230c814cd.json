@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/julia/Desktop/2023/ED/TDA Imagen/cmake-build-debug"
+			"value" : "/home/julia/Desktop/DGIIM/2023/ED/TDA Imagen/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -543,7 +543,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/julia/Desktop/2023/ED/TDA Imagen/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/julia/Desktop/DGIIM/2023/ED/TDA Imagen/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -603,7 +603,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/julia/Desktop/2023/ED/TDA Imagen"
+			"value" : "/home/julia/Desktop/DGIIM/2023/ED/TDA Imagen"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1155,7 +1155,19 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "DOXYGEN_EXECUTABLE-NOTFOUND"
+			"value" : "/usr/bin/doxygen"
+		},
+		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Doxygen",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding Doxygen"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[/usr/bin/doxygen][cfound components: doxygen missing components: dot][v1.9.4()]"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
@@ -1179,7 +1191,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/julia/Desktop/2023/ED/TDA Imagen/cmake-build-debug"
+			"value" : "/home/julia/Desktop/DGIIM/2023/ED/TDA Imagen/cmake-build-debug"
 		},
 		{
 			"name" : "practica2_IS_TOP_LEVEL",
@@ -1203,7 +1215,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/julia/Desktop/2023/ED/TDA Imagen"
+			"value" : "/home/julia/Desktop/DGIIM/2023/ED/TDA Imagen"
 		}
 	],
 	"kind" : "cache",

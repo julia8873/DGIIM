@@ -23,7 +23,8 @@ mayor parte de la sintaxis de Doxygen para comentar código en su
 
 # Introducción
 
-A RELLENAR POR EL ESTUDIANTE
+Especificación del TDA imágen para poder manipular imágenes en formato PGM más facilmente.
+Se incluyen diversos métodos incluídos en la siguiente sección.
 
 # Ejecutables
 
@@ -36,6 +37,48 @@ Calcula el negativo de una imagen
 @param "<FichImagenOriginal>" Imagen PGM a la que se va a calcular
 @param <FichImagenDestino> Imagen PGM resultado de calcular el negativo
 
+## Subimagen:
 
+Recorta una imagen
+
+> __subimagen__ \<FichImagenOriginal\> \<FichImagenDestino\> \<fila\> \<col\> \<fila_sub\> \<col_sub\>
+@param "<FichImagenOriginal>" Imagen PGM a la que se va a recortar
+@param <FichImagenDestino> Imagen PGM resultado recortada
+@param <fila> Fila de la imagen original donde se empieza a recortar
+@param <col> Columna de la imagen original donde se empieza a recortar
+@param <fila_sub> Altura de la imagen recortada
+@param <col_sub> Anchura de la imagen recortada
+
+## Zoom:
+
+Amplia una imagen
+
+> __zoom__ \<FichImagenOriginal\> \<FichImagenDestino\> \<fila\> \<col\> \<lado\>
+@param "<FichImagenOriginal>" Imagen PGM a la que se va a ampliar
+@param <FichImagenDestino> Imagen PGM resultado ampliada
+@param <fila> Fila de la imagen original donde se empieza a ampliar
+@param <col> Columna de la imagen original donde se empieza a ampliar
+@param <lado> Tamaño del lado de la imagen ampliada
+
+## Icono:
+
+Iconiza una imagen
+
+> __icono__ \<FichImagenOriginal\> \<FichImagenDestino\> \<factor\>
+@param "<FichImagenOriginal>" Imagen PGM a la que se va a iconizar
+@param <FichImagenDestino> Imagen PGM resultado iconizada
+@param <factor> Factor de reducción
+
+## Contraste:
+
+Modifica el contraste de una imagen
+
+> __contraste__ \<FichImagenOriginal\> \<FichImagenDestino\> \<e1\> \<e2\> \<s1\> \<s2\>
+@param "<FichImagenOriginal>" Imagen PGM a la que se va a modificar el contraste
+@param <FichImagenDestino> Imagen PGM resultado con el contraste modificado
+@param <e1> Umbral inferior de la imagen de entrada
+@param <e2> Umbral superior de la imagen de entrada
+@param <s1> Umbral inferior de la imagen de salida
+@param <s2> Umbral superior de la imagen de salida
 
 */

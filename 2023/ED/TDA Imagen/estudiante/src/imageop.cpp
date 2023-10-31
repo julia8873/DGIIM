@@ -16,28 +16,26 @@ void Image::Invert(){
 }
 
 void Image::AdjustContrast (byte in1, byte in2, byte out1, byte out2){
-    double cte = (out2 - out1) / (in2-in1);
-
+    double cte = ((out2 - out1)*1.0) / ((in2-in1)*1.0);
     double valor;
 
     for(int k=0; k<get_rows() * get_cols(); k++){
         valor = out1 + (cte)*(get_pixel(k) - in1);
         set_pixel(k, round(valor));
     }
-
 }
 
 double Image::Mean(int i, int j, int height, int width) const{
 
     double suma = 0;
+    int contador = 0;
 
-    if(height != 0 and width != 0) {
-        for (int fil = i; fil < i + width; fil++)
-            for (int col = j; col < j + height; col++)
-                suma += get_pixel(fil, col);
-        suma /= (width * height);
-    }
-
+    for (int fil = i; fil < i + height && fil < get_rows(); fil++)
+        for (int col = j; col < j + width && col < get_cols(); col++) {
+            suma += get_pixel(fil, col);
+            ++contador;
+        }
+    suma /= contador;
     return suma;
 }
 
@@ -119,25 +117,19 @@ Image Image::Zoom2X() const{
     return tmp;
 }
 
-void Image::ShuffleRows(){
-
-}
-
 bool Image::Iguales(Image &otro) const{
 
     bool iguales = true;
-
-    if(otro.get_rows() != get_rows() || otro.get_cols() != get_cols())
+    if(otro.get_rows() != this->get_rows() || otro.get_cols() != this->get_cols())
         iguales = false;
     else{
         int i = 0;
-        while((i<get_rows()*get_cols()-1) and iguales){
+        while((i<get_rows()*get_cols()-1) && iguales){
             if(otro.get_pixel(i) != get_pixel(i)) iguales = false;
             i++;
         }
 
     }
-
     return iguales;
 
 }

@@ -20,7 +20,8 @@
 						2,
 						3,
 						4,
-						5
+						5,
+						6
 					]
 				}
 			],
@@ -40,7 +41,8 @@
 						2,
 						3,
 						4,
-						5
+						5,
+						6
 					]
 				}
 			],
@@ -49,42 +51,49 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "contraste::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-contraste-Debug-fb5e477da2d09e7f701b.json",
+					"jsonFile" : "target-contraste-Debug-fb094dd32a5d01bb80cd.json",
 					"name" : "contraste",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "doc_doxygen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-doc_doxygen-Debug-af557e6ac7f7c9f54ada.json",
+					"name" : "doc_doxygen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "icono::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-icono-Debug-20a415365dd14b7e68ca.json",
+					"jsonFile" : "target-icono-Debug-1cf2861fe6fd49dc1834.json",
 					"name" : "icono",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "image::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-image-Debug-a605fb12b8bf5af8b3fb.json",
+					"jsonFile" : "target-image-Debug-d2089615451fd6bfd23f.json",
 					"name" : "image",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "negativo::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-negativo-Debug-ee37e009828bfac3932d.json",
+					"jsonFile" : "target-negativo-Debug-2df2e8b1242b4430ee38.json",
 					"name" : "negativo",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "subimagen::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-subimagen-Debug-e3a20069f0fa0ff01452.json",
+					"jsonFile" : "target-subimagen-Debug-4fa6ed988521641990c5.json",
 					"name" : "subimagen",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "zoom::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-zoom-Debug-b43de39fc40fa2573dbe.json",
+					"jsonFile" : "target-zoom-Debug-de1b1e02253f41c2e38e.json",
 					"name" : "zoom",
 					"projectIndex" : 0
 				}
@@ -94,8 +103,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/julia/Desktop/2023/ED/TDA Imagen/cmake-build-debug",
-		"source" : "/home/julia/Desktop/2023/ED/TDA Imagen"
+		"build" : "/home/julia/Desktop/DGIIM/2023/ED/TDA Imagen/cmake-build-debug",
+		"source" : "/home/julia/Desktop/DGIIM/2023/ED/TDA Imagen"
 	},
 	"version" : 
 	{

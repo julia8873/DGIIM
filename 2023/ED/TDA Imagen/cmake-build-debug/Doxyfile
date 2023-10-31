@@ -1,0 +1,6 @@
+PROJECT_NAME           = "Práctica 1. Imágenes"
+OUTPUT_DIRECTORY       = /home/julia/Desktop/DGIIM/2023/ED/TDA Imagen/cmake-build-debug/doc_doxygen/
+INPUT                  = /home/julia/Desktop/DGIIM/2023/ED/TDA Imagen/estudiante/include /home/julia/Desktop/DGIIM/2023/ED/TDA Imagen/estudiante/src /home/julia/Desktop/DGIIM/2023/ED/TDA Imagen/estudiante/doc
+GENERATE_LATEX         = NO
+IMAGE_PATH             = /home/julia/Desktop/DGIIM/2023/ED/TDA Imagen/estudiante/doc
+EXTRACT_PRIVATE        = NO

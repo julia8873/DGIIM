@@ -1,6 +1,4 @@
-//
-// Created by julia on 10/10/2023.
-//
+
 
 // Fichero: icono.cpp
 // Crea una imágen reducida por un factor (entero)
@@ -69,9 +67,9 @@ int main(int argc, char *argv[]) {
     }
 
     // EXTRA: comprobar si imágen es correcta
-    Image expected;
-    expected.Load("/home/julia/Desktop/2023/ED/codigo/expected/icono_pub.pgm");
-    cout << "Iguales? " << boolalpha << final.Iguales(expected) << endl;
+    // Image expected;
+    // expected.Load("/home/julia/Desktop/DGIIM/2023/ED/TDA Imagen/expected/icono_pub.pgm");
+    // cout << "Iguales? " << boolalpha << final.Iguales(expected) << endl;
 
     return 0;
 }
