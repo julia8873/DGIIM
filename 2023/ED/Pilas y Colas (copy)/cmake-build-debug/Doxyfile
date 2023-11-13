@@ -1,0 +1,6 @@
+PROJECT_NAME           = "Práctica 2. Pilas y Colas"
+OUTPUT_DIRECTORY       = /home/julia/Desktop/DGIIM/2023/ED/Pilas y Colas (copy)/cmake-build-debug/doc_doxygen/
+INPUT                  = /home/julia/Desktop/DGIIM/2023/ED/Pilas y Colas (copy)/estudiante/include /home/julia/Desktop/DGIIM/2023/ED/Pilas y Colas (copy)/estudiante/src /home/julia/Desktop/DGIIM/2023/ED/Pilas y Colas (copy)/estudiante/doc
+GENERATE_LATEX         = NO
+IMAGE_PATH             = /home/julia/Desktop/DGIIM/2023/ED/Pilas y Colas (copy)/estudiante/doc
+EXTRACT_PRIVATE	       = NO

@@ -1,0 +1,3 @@
+/home/julia/Desktop/DGIIM/2023/ED/Practica Examen 1/cmake-build-debug/CMakeFiles/Practica_Examen_1.dir
+/home/julia/Desktop/DGIIM/2023/ED/Practica Examen 1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/julia/Desktop/DGIIM/2023/ED/Practica Examen 1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
