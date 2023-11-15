@@ -1,0 +1,6 @@
+PROJECT_NAME           = "Práctica 4. TDAs no lineales"
+OUTPUT_DIRECTORY       = /home/julia/Desktop/DGIIM/2023/ED/Prácticas/setymap-estudiante/cmake-build-debug/doc_doxygen/
+INPUT                  = /home/julia/Desktop/DGIIM/2023/ED/Prácticas/setymap-estudiante/estudiante/include /home/julia/Desktop/DGIIM/2023/ED/Prácticas/setymap-estudiante/estudiante/src /home/julia/Desktop/DGIIM/2023/ED/Prácticas/setymap-estudiante/estudiante/doc
+GENERATE_LATEX         = NO
+IMAGE_PATH             = /home/julia/Desktop/DGIIM/2023/ED/Prácticas/setymap-estudiante/estudiante/doc
+EXTRACT_PRIVATE	       = NO

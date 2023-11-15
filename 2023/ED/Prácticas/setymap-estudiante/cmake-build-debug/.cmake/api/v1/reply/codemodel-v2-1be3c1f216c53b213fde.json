@@ -1,0 +1,114 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "p04_tdas_no_lineales",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "apariciones::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-apariciones-Debug-3fe991f0af3a8b2f93ce.json",
+					"name" : "apariciones",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "doc_doxygen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-doc_doxygen-Debug-e205594aee51b82c1247.json",
+					"name" : "doc_doxygen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "filtro::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-filtro-Debug-c796ff59ebf2e6ef60ab.json",
+					"name" : "filtro",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "inter::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-inter-Debug-5cd13986dc25e2925b25.json",
+					"name" : "inter",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "modificar::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-modificar-Debug-e8c2f5635f365937772b.json",
+					"name" : "modificar",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "palabras_longitud::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-palabras_longitud-Debug-6cbe5c1d40a381ab5f2e.json",
+					"name" : "palabras_longitud",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "union::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-union-Debug-5a334655d7136b2f3783.json",
+					"name" : "union",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/julia/Desktop/DGIIM/2023/ED/Pr\u00e1cticas/setymap-estudiante/cmake-build-debug",
+		"source" : "/home/julia/Desktop/DGIIM/2023/ED/Pr\u00e1cticas/setymap-estudiante"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}
