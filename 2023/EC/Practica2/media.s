@@ -1,5 +1,5 @@
 .section .data
-lista: 		.int 0x0fffffff
+lista: 		.int 1
 longlista:	.int 16
 resultado:	.int 0
 

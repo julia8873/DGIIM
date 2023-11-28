@@ -19,11 +19,10 @@ using namespace std;
   * elementos repetidos. 
   *
   *
-  * Un ejemplo de su uso:
   *
-  *
-  * @author Rosa Rodríguez
-  * @date Marzo 2012
+  * @author Andrés Alejo Martínez
+  * @author Julia Miralles Martínez
+  * @date 23 Noviembre 2023
   */
 
 class Guia_Tlf{

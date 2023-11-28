@@ -1,47 +1,47 @@
 #include <iostream>
 #include <queue>
+#include <set>
+#include <map>
 
 using namespace std;
 
-// Diseñar una función que dada una cola L devuelva otra cola R conteniendo los elementos repetidos de L.
-// Si no hay elementos repetidos de R será la cola vacía
-
-int main() {
-    cout << "jopasfd"  << endl;
-    queue<int> L;
-    L.push(5);
-    L.push(2);
-    L.push(7);
-    L.push(2);
-    L.push(5);
-    L.push(5);
-    L.push(1);
-
-    queue<int> R;
-    queue<int> aux;
-
-    while (!L.empty()) {
-        int x = L.front();
-        L.pop();
-        bool repetido = false;
-        if(L.empty()) break;
-        aux = L;
-        aux.pop();
-        while(!aux.empty() && !repetido){
-            if(aux.front() == x) {
-                R.push(x);
-                repetido = true;
-            }
-            aux.pop();
+// Diferencia de vector de conjuntos
+// Eg: Si vs=[{0,1,2,3},{2,3,4,5}] , entonces s1={0,1,4,5}
+void only1(vector<set<int>> &vs, set<int> &s1){
+    map<int,int> num;
+    set<int>::iterator j;
+    for (int i = 0;  i<vs.size() ; i++) {
+        set<int> conjunto = vs[i];
+        for(j=conjunto.begin(); j!=conjunto.end(); ++j){
+            int val = *j;
+            if(num.find(val) == num.end())
+                num[val] = 0;
+            ++num[val];                                                     //he heq
+            /*if (num.find(val) != num.end())
+                num[val]++;
+            else
+                num[val] = 1;*/
         }
     }
 
-    cout << "Cola R: ";
-    while (!R.empty()) {
-        cout << R.front() << " ";
-        R.pop();
-    }
+    map<int,int>::iterator it;
+    for(it=num.begin(); it!=num.end(); ++it )
+        if(num[it->second] == 1) s1.insert(it->first);
 
+}
+
+
+int main() {
+    vector<set<int>> vs;
+    vs.push_back({0,1,2,3});
+    vs.push_back({2,3,4,5});
+    set<int> s1;
+
+    only1(vs, s1);
+    // imprimir s1
+    set<int>::iterator j;
+    for(j=s1.begin(); j!=s1.end(); ++j)
+        cout << *j << " ";
 
     return 0;
 }

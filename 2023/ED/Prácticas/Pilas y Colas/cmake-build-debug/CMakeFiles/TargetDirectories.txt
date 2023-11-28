@@ -1,0 +1,7 @@
+/home/julia/Desktop/DGIIM/2023/ED/Prácticas/Pilas y Colas (copy)/cmake-build-debug/CMakeFiles/maxstack.dir
+/home/julia/Desktop/DGIIM/2023/ED/Prácticas/Pilas y Colas (copy)/cmake-build-debug/CMakeFiles/maxqueue.dir
+/home/julia/Desktop/DGIIM/2023/ED/Prácticas/Pilas y Colas (copy)/cmake-build-debug/CMakeFiles/pila_max.dir
+/home/julia/Desktop/DGIIM/2023/ED/Prácticas/Pilas y Colas (copy)/cmake-build-debug/CMakeFiles/cola_max.dir
+/home/julia/Desktop/DGIIM/2023/ED/Prácticas/Pilas y Colas (copy)/cmake-build-debug/CMakeFiles/doc_doxygen.dir
+/home/julia/Desktop/DGIIM/2023/ED/Prácticas/Pilas y Colas (copy)/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/julia/Desktop/DGIIM/2023/ED/Prácticas/Pilas y Colas (copy)/cmake-build-debug/CMakeFiles/rebuild_cache.dir

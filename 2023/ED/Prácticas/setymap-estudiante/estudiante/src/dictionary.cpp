@@ -1,38 +1,42 @@
 #include "dictionary.h"
 #include <set>
-#include <string>
+#include <vector>
+#include <fstream>
 #include <iostream>
+#include <algorithm>
 
-using namespace std;
-
-Dictionary::Dictionary() {
+Dictionary::Dictionary(){
     words = set<string>();
 }
 
-Dictionary::Dictionary(const Dictionary& other) {
+Dictionary::Dictionary(Dictionary &other){
     words = other.words;
 }
 
-bool Dictionary::exists(const std::string& val) const{
-    return words.find(val) != words.end();
+Dictionary::Dictionary(ifstream &f){
+    if(f.is_open()){
+        string palabra;
+        while(f >> palabra)
+            insert(palabra);
+        f.close();
+    }
 }
 
-bool Dictionary::insert(const string& val) {
-    bool esta = true;
-    if(!words.count(val)){ // Palabra no está
-        words.insert(val);
-        esta = false;
-    }
-    return esta;
+bool Dictionary::exists(const string &val) const{
+    set<string>::iterator it;
+    it = words.find(val);
+    return !(it == words.end());
 }
-bool Dictionary::erase(const string& val){
-    bool esta = false;
-    set<string>::iterator it = words.find(val);
-    if(it != words.end()){ // Palabra está
-        words.erase(it);
-        esta = true;
-    }
-    return esta;
+
+bool Dictionary::insert(const string &val){
+    pair<set<string>::iterator, int> res;
+    res = words.insert(val);
+    return res.second;
+}
+
+bool Dictionary::erase(const string &val){
+    int res = words.erase(val);
+    return res;
 }
 
 void Dictionary::clear(){
@@ -48,34 +52,30 @@ unsigned int Dictionary::size() const{
 }
 
 vector<string> Dictionary::wordsOfLength(int length){
-    vector<string> aux;
-    set<string>::iterator it = words.begin();
-    for(; it != words.end(); ++it){
-        if((*it).length() == length){
-            aux.push_back(*it);
-        }
+    vector<string> result;
+    for(set<string>::iterator it = words.begin(); it != words.end(); ++it){
+        if((*it).length() == length)
+            result.push_back(*it);
     }
-
-    return aux;
+    return result;
 }
 
-int Dictionary::getOcurrances(const char c){
-    int n = 0;
-    set<string>::iterator it = words.begin();
-    for(; it != words.end(); ++it)
-        for(int i=0; i<(*it).length(); ++i)
-            if((*it).at(i) == c) n++;
-
-    return n;
+int Dictionary::getOccurrences(const char c){
+    int sum = 0;
+    for(set<string>::iterator it = words.begin(); it != words.end(); ++it){
+        sum += count((*it).begin(), (*it).end(), c);
+    }
+    return sum;
 }
 
-void Dictionary::anade(const Dictionary& dic){
-    set<string>::iterator it = dic.words.begin();
-    for(; it!=dic.words.end(); ++it)
-        words.insert(*it);
+void Dictionary::anade(const Dictionary &dic){
+    for(set<string>::iterator it = dic.words.begin(); it != dic.words.end(); ++it)
+        insert(*it);
 }
 
-void Dictionary::toString() const {
-    for(set<string>::iterator it = words.begin(); it != words.end(); ++it)
-        cout << *it << endl;
+ostream & operator<<(ostream &os, const Dictionary &dict){
+    for(auto it = dict.words.begin(); it != dict.words.end(); ++it){
+        os << (*it) << endl;
+    }
+    return os;
 }

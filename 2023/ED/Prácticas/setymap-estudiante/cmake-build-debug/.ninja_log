@@ -1,13 +1,16 @@
 # ninja log v5
 3	364	1700078468361042362	CMakeFiles/modificar.dir/estudiante/src/modificar.cpp.o	727e46198c5a7737
+1	478	1700078696472014327	CMakeFiles/filtro.dir/estudiante/src/guiatlf.cpp.o	ccb0a39d425ffd7b
 2	363	1700072820604969069	CMakeFiles/palabras_longitud.dir/estudiante/src/palabras_longitud.cpp.o	d9ca014e7b2b78af
 2	469	1700072800259967430	CMakeFiles/palabras_longitud.dir/estudiante/src/dictionary.cpp.o	12a31e714e745407
 2	421	1700073196049332230	CMakeFiles/apariciones.dir/estudiante/src/dictionary.cpp.o	5e175ec8e848540b
 1	333	1700073163252002636	CMakeFiles/apariciones.dir/estudiante/src/apariciones.cpp.o	6420762780d30254
+478	566	1700078696560016966	filtro	7c6a095f507fc226
 3	502	1700078468497046610	CMakeFiles/modificar.dir/estudiante/src/guiatlf.cpp.o	68739bc0828da0f0
 502	584	1700078468577049109	modificar	6efd07eaf1e813ee
-1	97	1700078529226931449	build.ninja	c1370f72621779a7
+1	97	1700757097044130179	build.ninja	c1370f72621779a7
 507	613	1700076917130851933	inter	a8d9d4bb01463ef7
+0	340	1700078696336010249	CMakeFiles/filtro.dir/estudiante/src/filtro.cpp.o	23e8ceea991cf082
 0	323	1700076916842823147	CMakeFiles/inter.dir/estudiante/src/inter.cpp.o	36cc6e0a8e2f985b
 421	514	1700073196141335944	apariciones	db96dd17c64d4972
 0	342	1700073709257316931	CMakeFiles/union.dir/estudiante/src/union.cpp.o	f741d08301cd48cd
@@ -15,6 +18,11 @@
 499	582	1700073709497326098	union	c8469ab45448e360
 0	507	1700076917026841546	CMakeFiles/inter.dir/estudiante/src/guiatlf.cpp.o	40188890290ad0ec
 1	499	1700073709413322889	CMakeFiles/union.dir/estudiante/src/dictionary.cpp.o	5356df25f5536ea5
-0	340	1700078696336010249	CMakeFiles/filtro.dir/estudiante/src/filtro.cpp.o	23e8ceea991cf082
-1	478	1700078696472014327	CMakeFiles/filtro.dir/estudiante/src/guiatlf.cpp.o	ccb0a39d425ffd7b
-478	566	1700078696560016966	filtro	7c6a095f507fc226
+4	607	1700757193442496209	CMakeFiles/apariciones.dir/estudiante/src/apariciones.cpp.o	f4cabb074c959c21
+3	881	1700757193718485605	CMakeFiles/apariciones.dir/estudiante/src/dictionary.cpp.o	f00951a5c0d3055f
+881	1011	1700757193846480687	apariciones	db96dd17c64d4972
+2	524	1700757404386748936	CMakeFiles/apariciones.dir/estudiante/src/apariciones.cpp.o	f4cabb074c959c21
+525	646	1700757404502748273	apariciones	db96dd17c64d4972
+2	497	1700758155266352750	CMakeFiles/apariciones.dir/estudiante/src/apariciones.cpp.o	f4cabb074c959c21
+2	787	1700758155554354626	CMakeFiles/apariciones.dir/estudiante/src/dictionary.cpp.o	f00951a5c0d3055f
+787	895	1700758155662355330	apariciones	db96dd17c64d4972
