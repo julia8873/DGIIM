@@ -11,35 +11,33 @@
 #include <sys/types.h>
 #include <errno.h>
 #include <fcntl.h>
+#include <sys/stat.h>
+#include <math.h>
 
 int main(int argc, char *argv[]) {
 
-    printf("sdfafasdf\n");
+    if(argc != 4) {
+        return 1;
+    }
 
-    int min = argv[1];
-    int max = argv[2];
-    int primos = 0;
-    int i, j, flag;
+    int min = strtol(argv[1], NULL, 10);
+    int max = strtol(argv[2], NULL, 10);
 
-    for (i = min; i <= max; i++) {
-        if (i == 1 || i == 0)
-            continue;
+    int fd = strtol(argv[3], NULL, 10);
 
-        flag = 1;
-
-        for (j = 2; j <= i / 2; ++j) {
+    for (int i = min; i <= max; ++i) {
+        int isPrime = 1;
+        for (int j = 2; j <= sqrt(i); ++j) {
             if (i % j == 0) {
-                flag = 0;
+                isPrime = 0;
                 break;
             }
         }
-
-        if (flag == 1) {
-            primos++;
+        if (isPrime) {
+            // Send the prime number to the master
+            write(fd, &i, sizeof(int));
         }
     }
-
-    printf("\n Primos 2 son: %d", primos);
 
     return (0);
 
