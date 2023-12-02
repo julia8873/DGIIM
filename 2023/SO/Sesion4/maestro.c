@@ -12,17 +12,30 @@
 #include <sys/types.h>
 #include <errno.h>
 #include <fcntl.h>
+#include <sys/stat.h>
 
 int main(int argc, char *argv[]){
-    int fd[2];
-    pid_t PID;
+    if (argc != 3) {
+        printf("Usage: %s <min> <max>\n", argv[0]);
+        return 1;
+    }
+
+    int fd[2], fd2[2];
+    pid_t PID, PID2 ;
     char buffer[80];
 
     // Intervalos
-    int min = atoi(argv[1]);
-    int max = atoi(argv[2]);
+    int min = strtol(argv[1], NULL, 10);
+    int max = strtol(argv[2], NULL, 10);
     // Imprimir números
-    printf("\n Intervalo: %d - %d", min, max);
+    printf("Intervalo: %d-%d\n", min, max);
+    // Dividir intervalos
+    int max_1 = max/2;
+    int min_2 = max_1 +1;
+    printf("Intervalo 1: %d-%d\n", min, max_1);
+    printf("Intervalo 2: %d-%d\n", min_2, max);
+
+
 
     pipe(fd);
 
@@ -31,15 +44,11 @@ int main(int argc, char *argv[]){
         exit(-1);
     }
 
-    // Dividir intervalos
-    int max_1 = max/2;
-    int min_2 = max_1 +1;
-
-
     if(PID == 0){
+        printf("Soy Hijo. Enviando Argumentos \n");
         close(fd[0]);
         dup2(fd[1], STDOUT_FILENO);
-        printf("Soy Hijo. Enviando Argumentos \n");
+        printf("hola \n");
         execl("./esclavo", "esclavo", min, max_1, NULL);
 
     }else{

@@ -1,0 +1,15 @@
+# CONTRASEÑA: sombrilla
+# PIN: 50208
+
+# MODIFICADA: sumbrolle
+# PIN: 49791
+
+ENCRIPTACIÓN DE LA CONTRASEÑA
+------------------------------
+Sólo se modifican las vocales con el siguiente patrón:
+	a->e, e->i, i->o, o->u, u->a
+
+ENCRIPTACIÓN DEL PIN
+------------------------------
+Se sigue el siguiente patrón:
+	1<->8, 2<->7, 3<->6, 4<->5, 0<->9

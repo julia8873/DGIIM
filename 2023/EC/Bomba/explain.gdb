@@ -2,6 +2,7 @@
 
 # CONTRASEÑA: sombrilla
 # PIN: 50208
+
 # MODIFICADA: sumbrolle
 # PIN: 49791
 
@@ -19,7 +20,7 @@
 # gcc -Og bomba.c -o bomba -no-pie -fno-guess-branch-probability
 
 ########################################################
-DESENCRIPTAR CONTRASEÑA
+### DESENCRIPTAR CONTRASEÑA
 ########################################################
 ### cargar el programa
     gdb bomba
@@ -31,10 +32,12 @@ DESENCRIPTAR CONTRASEÑA
     br *main+131
     run
 ### Introducimos 'hola' como contraseña
-### Vamos hasta el primer jump <encrypt_psswd+165>
 # Podemos imprimir el valor de rax
 #  p(char*) $rax   # -> sale 'hola\n'
 
+### Vamos hasta el primer jump <encrypt_psswd+165>
+    br *encrypt_psswd+165
+    
 ### continuamos con ni hasta <encrypt_psswd+201>
 # Notamos que se llama a strlen para coger la longitud de la contraseña
 # Podemos ver que $rax = 5 -> longitud de la contraseña 'hola\n'
@@ -49,6 +52,14 @@ DESENCRIPTAR CONTRASEÑA
 # Notamos que en cmp se compara con el valor 0x14 que es [SHIFT OUT] en ASCII
 # entonces en este caso no entra
 
+### Podemos seguir avanzando e ir imprimiendo el valor de $rax
+# Vemos como cambia la contraseña
+
+### Notemos que en el <encrypt_psswd+58>
+# No se salta si la letra guardada es una vocal, en cuyo caso la modifica
+
+### En el <encrypt_psswd+111> el valor de $rax es e
+# Es decir, ha pasado de a -> e.
 
 
 ### Notemos que en <main+155> se mueve a %rdi el valor de la 
@@ -56,12 +67,59 @@ DESENCRIPTAR CONTRASEÑA
 # Imprimimos contraseña encriptada
 	p(char*) $rdi    # -> sale 'hule\n'
 
+### Podemos repetir el proceso metiendo contraseñas con vocales
+# y ver cual es el patrón:
+# a->e, e->i, i->o, o->u, u->a
+
+### Tenemos la contraseña encriptada guardada en la dirección 0x404070
+# Imprimimos con:
+	p(char*) 0x404070
+# Nos sale "sumbrolle\n"
+### Desencriptamos con el patrón anterior -> contraseña = "sombrilla"
+
     
 ########################################################
-    
+
+########################################################
+### DESENCRIPTAR PIN (procedimiento análogo)
+########################################################
+### cargar el programa
+    gdb bomba
+### util para la sesion interactiva, no para source/gdb -q -x
+# layout asm
+# layout regs
+### arrancar programa
+### Miramos donde se define la función <encrypt_passcode>
+    br *encrypt_passcode
+    run
+### Introducimos la contraseña ya desencriptada de antes:
+    sombrilla
+### Introducimos como pin 12345
+
+### Tenemos el pin original en 0x40407c
+# Imprimir con p/d *0x40407c -> sale 49791
+
+### Continuamos hasta <encrypt_passcode+214>
+# El valor de nuestro pin encriptado está en %rsi
+### Alternativamente podemos ir hasta el main,
+# Antes del cmp, en <main+353> y ver el valor de %edx
+
+### Nuestro pin nuevo -> 87654
+# Entonces, lo que se ha hecho es:
+# 1->8, 2->7, 3->6, 4->5, 5->4
+### Si ponemos otro pin, veremos que:
+# 1<->8, 2<->7, 3<->6, 4<->5, 0<->9
+
+### Cogemos el pin encriptado original:
+# 49791 = 50208
+
+### Introducimos entonces:
+# Contraseña: sombrilla
+# PIN: 50208
+
     
 ########################################################
-DESACTIVAR BOMBA SIN CONTRASEÑA NI PIN
+### DESACTIVAR BOMBA SIN CONTRASEÑA NI PIN
 ########################################################
 ### cargar el programa
     gdb bomba

@@ -13,6 +13,9 @@
 #include <fcntl.h>
 
 int main(int argc, char *argv[]) {
+
+    printf("sdfafasdf\n");
+
     int min = argv[1];
     int max = argv[2];
     int primos = 0;
