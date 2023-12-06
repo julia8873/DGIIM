@@ -1,0 +1,63 @@
+
+Bloque 1
+/home/julia:
+Desktop
+Documents
+Downloads
+Music
+Pictures
+Public
+snap
+Templates
+Vi
+Bloque 2
+deos
+
+/home/julia/Desktop:
+DGIIM
+
+/home/julia/Desktop/DGIIM:
+2023
+
+/home/julia/D
+Bloque 3
+esktop/DGIIM/2023:
+EC
+ED
+SO
+
+/home/julia/Desktop/DGIIM/2023/EC:
+Bomba
+Practica1
+
+Bloque 4
+Practica2
+Practica3
+
+/home/julia/Desktop/DGIIM/2023/EC/Bomba:
+2023_JMM
+2023_JMM.
+Bloque 5
+zip
+bomba
+bomba.c
+bomba.gdb
+bomba-gdb.gdb
+Bomba_JMM.zip
+como_se_ha_encriptado.tx
+Bloque 6
+t
+explain.gdb
+mi_bomba
+mi_bomba.c
+
+/home/julia/Desktop/DGIIM/2023/EC/Practica1:
+
+Bloque 7
+data
+imprime_hola
+imprime_hola.o
+imprime_hola.s
+sum.c
+sum.o
+sum.s
