@@ -9,7 +9,7 @@
 
 class Punto {
 private:
-    int latitud, longitud;
+    double latitud, longitud;
     std::string descripcion;
 
 public:
@@ -28,38 +28,37 @@ public:
      * @param desc descripción del punto
      *
      */
-    Punto(int lat, int lon, std::string desc);
+    Punto(double lat, double lon, std::string desc);
 
     /**
      * @brief Coger la latitud
      * @return latitud del punto
      */
-    int getLatitud();
+    double getLatitud() const;
 
     /**
      * @brief Coger la longitud
      * @return longitud del punto
      */
-    int getLongitud();
+    double getLongitud() const;
 
     /**
      * @brief Coger la descripción
      * @return descripción del punto
      */
-    std::string getDescripcion();
-
+    std::string getDescripcion() const;
 
     /**
      * @brief Establece la latitud.
      * @param lat latitud a introducir.
      */
-    void setLatitud(int lat);
+    void setLatitud(double lat);
 
     /**
      * @brief Establece la longitud.
      * @param lon longitud a introducir.
      */
-    void setLongitud(int lon);
+    void setLongitud(double lon);
 
     /**
      * @brief Establece la descripción.
@@ -74,7 +73,39 @@ public:
      */
     double distancia(Punto & otro);
 
+    /**
+     * @brief Sobrecarga del operador <
+     * @param p punto a comparar
+     * @return true si el punto es menor
+     * @return false si el punto es mayor
+     */
+    bool operator<(const Punto& p) const;
+
+    /**
+     * @brief Sobrecarga del operador ==
+     * @param p punto a comparar
+     * @return true si los puntos son iguales
+     * @return false si no son iguales
+     */
+    bool operator==(const Punto& p) const;
+
+    /**
+     * @brief Sobrecarga del operador de salida
+     * @param os flujo de salida
+     * @param p punto a imprimir
+     */
+    friend std::ostream & operator<<(std::ostream & os, const Punto & p);
+
+    /**
+     * @brief Sobrecarga del operador de entrada
+     * @param is flujo de entrada
+     * @param p punto a leer
+     */
+    friend std::istream & operator>>(std::istream & is, Punto & p);
+
 };
+
+
 
 
 #endif //PRACTICAFINAL_PUNTO_H

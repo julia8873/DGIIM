@@ -20,8 +20,8 @@ int main(int argc, char * argv[]){
     return 0;
   }
   Imagen I,Ip;
-  I.LeerImagen(argv[1]);
-  Ip.LeerImagen(argv[2],argv[3]);
+  I.Leer(argv[1]);
+  Ip.Leer(argv[2],argv[3]);
   int i,j;
   i=atoi(argv[5]); j=atoi(argv[6]);
   
@@ -32,6 +32,6 @@ int main(int argc, char * argv[]){
   
     
   I.PutImagen(i,j,Ip,tp);
-  I.EscribirImagen(argv[4]);
+  I.Escribir(argv[4]);
   
 }  

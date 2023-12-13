@@ -1,0 +1,16 @@
+
+Line.cc
+-----------------
+
+Notamos como va descendiendo el tiempo de ejecución a medida que aumenta el tamaño (B).
+Pero en 64 B hay un pico lo que nos indica que el tamaño de línea que usa mi procesador es de 64B.
+Esto lo podemos comprobar con makeinfo (ver pantallazo)
+
+Size.cc
+-----------------
+Notamos que en 32KB hay una bajada considerable -> L1
+En 51KB se estabiliza -> L2
+Para saber el tamaño de L3 podemos usar también makeinfo,
+    que nos dice que L3 tiene un tamaño de 4096KB
+
+NOTA: No he podido instalar correctamente CPUG

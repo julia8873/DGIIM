@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
@@ -7,18 +10,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93335084-5d72-4902-b4ac-dd8b5ea1261d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/include/almacenRutas.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/include/imagen.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/include/pais.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/include/punto.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/include/ruta.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/src/almacenRutas.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/src/pais.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/src/punto.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/src/ruta.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../SO/Sesion4/esclavo.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../SO/Sesion4/esclavo.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../SO/Sesion4/maestro" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../SO/Sesion4/maestro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../SO/Sesion4/maestro.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../SO/Sesion4/maestro.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/include/paises.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/src/paises.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../practicafinal/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../practicafinal/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../practicafinal/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-e60d054d9ac1aeaa11b1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../practicafinal/cmake-build-debug/.cmake/api/v1/reply/index-2023-11-28T10-00-09-0916.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../practicafinal/cmake-build-debug/.cmake/api/v1/reply/target-doc_doxygen-Debug-2d768178bebabfad3293.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../practicafinal/cmake-build-debug/.cmake/api/v1/reply/target-image-Debug-432d5733a76dc10efd81.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../practicafinal/cmake-build-debug/.cmake/api/v1/reply/target-pruebapegado-Debug-8bcdcebabfdc4d828a92.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../practicafinal/cmake-build-debug/.cmake/api/v1/reply/target-pruebarotacion-Debug-eb67b3c19096d4682293.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../practicafinal/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../practicafinal/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../practicafinal/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../../practicafinal/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/include/almacenRutas.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/include/almacenRutas.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/include/imagen.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/include/imagen.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/include/pais.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/include/pais.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/include/punto.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/include/punto.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/include/ruta.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/include/ruta.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/src/imagen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/src/imagen.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/src/pais.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/src/pais.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/src/punto.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/src/punto.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/src/ruta.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../practicafinal/rutas_aereas/src/ruta.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../SO/Sesion5/envioSignal.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../SO/Sesion5/envioSignal.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../SO/Sesion5/reciboSignal.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../SO/Sesion5/reciboSignal.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../SO/Sesion5/tarea11.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../SO/Sesion5/tarea11.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,9 +51,9 @@
     <option name="majorVersion" value="2023" />
     <option name="minorVersion" value="2.2" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2Ynh9t7fornuuh4he0jAcChyMwr" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -53,6 +68,11 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/julia/Desktop/DGIIM/2023/SO/Sesion5",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -65,6 +85,8 @@
       <option name="presentableId" value="Default" />
       <updated>1701167102709</updated>
       <workItem from="1701167103998" duration="48000" />
+      <workItem from="1701625552524" duration="829000" />
+      <workItem from="1701630930747" duration="48000" />
     </task>
     <servers />
   </component>

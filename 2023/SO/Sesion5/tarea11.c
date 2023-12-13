@@ -4,16 +4,15 @@
 #include <signal.h>
 
 int main()
-
 {
 sigset_t new_mask;
 
-/* inicializar la nueva mascara de señales */
+/* inicializar la nueva mascara de seï¿½ales */
 sigemptyset(&new_mask);
 
 sigaddset(&new_mask, SIGUSR1);
-
-/*esperar a cualquier señal excepto SIGUSR1 */
+    printf("\nfdasf\n");
+/*esperar a cualquier seï¿½al excepto SIGUSR1 */
 sigsuspend(&new_mask);
-
+    printf("\nSeÃ±al recibida\n");
 }

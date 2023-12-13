@@ -17,10 +17,10 @@ Imagen Rota(const Imagen & Io,double angulo){
     rcorners[1]=0;
     ccorners[0]=0;
     ccorners[2]=0;
-    rcorners[2]=Io.num_filas()-1;
-    rcorners[3]=Io.num_filas()-1;
-    ccorners[1]=Io.num_cols()-1;
-    ccorners[3]=Io.num_cols()-1;
+    rcorners[2]=Io.GetFilas()-1;
+    rcorners[3]=Io.GetFilas()-1;
+    ccorners[1]=Io.GetCols()-1;
+    ccorners[3]=Io.GetCols()-1;
     new_row_min=0;
     new_col_min=0;
     new_row_max=0;
@@ -59,8 +59,8 @@ Imagen Rota(const Imagen & Io,double angulo){
 	   float old_col=-oldrowsin+oldcolcos;
 	   old_row=ceil((double)old_row);
 	   old_col=ceil((double)old_col);
-	   if((old_row>=0)&&(old_row<Io.num_filas())&&
-	      (old_col>=0)&&(old_col<Io.num_cols()))
+	   if((old_row>=0)&&(old_row<Io.GetFilas())&&
+	      (old_col>=0)&&(old_col<Io.GetCols()))
 	   {
 	      Iout(rows,cols)=Io(old_row,old_col);
               
@@ -84,10 +84,10 @@ int main(int argc, char * argv[]){
     return 0;
   }
   Imagen I;
-  I.LeerImagen(argv[1]);
+  I.Leer(argv[1]);
   double angulo=atof(argv[2]);
   angulo = angulo*(M_PI)/180;
   Imagen Iout=Rota(I,angulo);
-  Iout.EscribirImagen(argv[3]);
+  Iout.Escribir(argv[3]);
   
 }  

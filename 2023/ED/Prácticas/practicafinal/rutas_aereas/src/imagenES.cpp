@@ -8,6 +8,7 @@
 
 #include <fstream>
 #include <string>
+#include <iostream>
 #include "imagenES.h"
 using namespace std;
 
@@ -95,7 +96,7 @@ bool LeerImagenPPM (const char nombre[], int& filas, int& columnas, unsigned cha
   filas=0;
   columnas=0;
   ifstream f(nombre);
-  
+
   if (LeerTipo(f)==IMG_PPM)
     if (LeerCabecera (f, filas, columnas))
 	if (f.read(reinterpret_cast<char *>(buffer),filas*columnas*3))

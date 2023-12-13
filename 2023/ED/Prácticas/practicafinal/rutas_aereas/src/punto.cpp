@@ -5,30 +5,31 @@
 #include "punto.h"
 #include <string>
 #include <cmath>
+#include <iostream>
 
 using namespace std;
 
 Punto::Punto():latitud(0), longitud(0){}
 
-Punto::Punto(int lat, int lon, string desc):latitud(lat), longitud(lon), descripción(desc){}
+Punto::Punto(double lat, double lon, string desc):latitud(lat), longitud(lon), descripcion(desc){}
 
-int Punto::getLatitud(){
+double Punto::getLatitud() const {
     return latitud;
 }
 
-int Punto::getLongitud(){
+double Punto::getLongitud() const{
     return longitud;
 }
 
-string Punto::getDescripcion(){
+string Punto::getDescripcion() const{
     return descripcion;
 }
 
-void Punto::setLatitud(int lat){
+void Punto::setLatitud(double lat){
     latitud = lat;
 }
 
-void Punto::setLongitud(int lon){
+void Punto::setLongitud(double lon){
     longitud = lon;
 }
 
@@ -40,3 +41,27 @@ double Punto::distancia(Punto & otro){
     double dif = (latitud - otro.getLatitud())^2 * (longitud - otro.getLongitud())^2;
     return sqrt(dif);
 }
+
+bool Punto::operator<(const Punto & otro) const{
+
+}
+
+bool Punto::operator==(const Punto & otro) const{
+    return (latitud == otro.getLatitud() && longitud == otro.getLongitud() && descripcion == otro.getDescripcion());
+}
+
+ostream & operator<<(ostream & os, const Punto &p){
+    os <<p.getDescripcion() <<"("<< p.getLatitud() << "," << p.getLongitud() << ")";
+    return os;
+}
+
+istream & operator>>(istream & is, Punto &p){
+    int lat, lon;
+    string desc;
+    is >> lat >> lon >> desc;
+    p.setLatitud(lat);
+    p.setLongitud(lon);
+    p.setDescripcion(desc);
+    return is;
+}
+
